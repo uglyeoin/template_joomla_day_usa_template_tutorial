@@ -37,6 +37,14 @@ However, in some cases, you really don't want a component.  Say for example a pa
     * Below footer is 100% width
 3. Let's use pure grid to create those items.                        
 
+##Step 6 - Get Joomla! to output the modules
+1. Ok I see that footer is a little more technical.  For the sake of simplicity I'll leave that as it is.
+2. All the 100% sections can be left as they are as well for now - it's only a tutorial
+3. But what about the 2 column sections?  We can do this within Joomla! that way if we aren't happy we can simply change the classes.
+4. Let's add the module content and use Joomla! to add those classes
+
+
+
 #### We encourage Pull requests.  Please make this template better.
 
 ###### Thanks to [Elisa Foltyn](https://www.joomla.de/wissen/joomla-tipps-im-advent/470-tuerchen-nummer-10) who created an excellent tutorial on creating your own Joomla! template on joomla.de without which I would not have managed this.  
