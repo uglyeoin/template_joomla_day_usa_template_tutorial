@@ -54,10 +54,10 @@ $belowFooter     = ($this->countModules('belowFooter'));
 
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
-<head>
-	<jdoc:include type="head" />
-</head>
-<body
+    <head>
+        <jdoc:include type="head" />
+    </head>
+    <body
     <?php echo "class='" .
             $option
 	    . ' view-' . $view
@@ -69,7 +69,42 @@ $belowFooter     = ($this->countModules('belowFooter'));
         . "'";
     ?>
 >
-    <div>Just some div</div>
 
-</body>
+        <div class="pure-g" id="navigation">
+            <div class="pure-u-1-1"><p>Navigation</p></div>
+        </div>
+
+        <div class="pure-g" id="hero">
+            <div class="pure-u-1-1"><p>hero</p></div>
+        </div>
+
+        <div class="pure-g" id="belowHero">
+            <div class="pure-u-1-1"><p>belowHero</p></div>
+        </div>
+
+        <div class="pure-g" id="feature">
+            <div class="pure-u-1-1"><p>feature</p></div>
+        </div>
+
+        <div class="pure-g" id="services">
+            <div class="pure-u-1-1"><p>services</p></div>
+        </div>
+
+        <div class="pure-g" id="reviews">
+            <div class="pure-u-1-1"><p>reviews</p></div>
+        </div>
+
+        <div class="pure-g" id="callToAction">
+            <div class="pure-u-1-1"><p>callToAction</p></div>
+        </div>
+
+        <div class="pure-g" id="footer">
+            <div class="pure-u-1-1"><p>footer</p></div>
+        </div>
+
+        <div class="pure-g" id="belowFooter">
+            <div class="pure-u-1-1"><p>belowFooter</p></div>
+        </div>
+
+    </body>
 </html>

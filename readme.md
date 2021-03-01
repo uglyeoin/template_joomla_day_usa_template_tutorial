@@ -24,8 +24,8 @@ However, in some cases, you really don't want a component.  Say for example a pa
 3. You'll see we used countModules.  This checks to see if any modules are assigned to that module position.  If there aren't, we don't need to load it.
 
 ##Step 5 - add some structure to the page and call the module positions
-1.  ok let's add some grid items to the page
-2. It looks like we need:
+1. Ok let's add some grid items to the page
+2. I've added a full screen image to the repository.  It looks like we need:
     * The menu is 100% width
     * The hero image is 100% width
     * Below hero is a conundrum, but let's make it two columns
