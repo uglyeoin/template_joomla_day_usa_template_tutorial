@@ -20,8 +20,22 @@ However, in some cases, you really don't want a component.  Say for example a pa
 
 ##Step 4 - Add Module Positions
 1. Ok that's all the CSS and JavaScript we'll add for now.  Let's add some module positions
-2. 
+2. I'll base the module positions on my design.  
+3. You'll see we used countModules.  This checks to see if any modules are assigned to that module position.  If there aren't, we don't need to load it.
 
+##Step 5 - add some structure to the page and call the module positions
+1.  ok let's add some grid items to the page
+2. It looks like we need:
+    * The menu is 100% width
+    * The hero image is 100% width
+    * Below hero is a conundrum, but let's make it two columns
+    * Let's make feature 2 columns
+    * Our services might look like 3 columns, but let's make it a category blog.  So let's use the component in this section.
+    * Reviews is 100% width
+    * Call to action is 2 column
+    * Footer is two rows.  A 3 colum and a 4 column
+    * Below footer is 100% width
+3. Let's use pure grid to create those items.                        
 
 #### We encourage Pull requests.  Please make this template better.
 
