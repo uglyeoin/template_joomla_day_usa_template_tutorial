@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" version="3.8" client="site" method="upgrade">
-    <name>Starter Bootstrap 4 Template</name>
+    <name>Joomla! Day USA - How to build your own Joomla! Template</name>
     <version>1.0</version>
     <creationDate>20/08/2018</creationDate>
-    <author>YOUR NAME</author>
-    <authorEmail>YOUR EMAIL</authorEmail>
-    <copyright>YOUR COPYRIGHT</copyright>
+    <author>Eoin Oliver</author>
+    <authorEmail>eoin@squareballoon.co.uk</authorEmail>
+    <copyright>Eoin Oliver - but do what you want with this template</copyright>
     <description><![CDATA[TPL_JOOMLA_LONDON_XML_DESCRIPTION]]></description>
 
     <files>
@@ -45,11 +45,6 @@
                        label="JGLOBAL_DESCRIPTION"
                        description="JGLOBAL_SUBHEADING_DESC"
                        filter="string"/>
-                <field name="framework" type="list" default="bootstrap4" required="true" label="TPL_STARTER_BOOTSTRAP_4_LABEL" description="TPL_STARTER_BOOTSTRAP_4_DESCRIPTION">
-                    <option value="">TPL_STARTER_BOOTSTRAP_4_DEFAULT_OPTION</option>
-                    <option value="bootstrap4">Bootstrap4</option>
-                    <option value="foundation6">Foundation 6</option>
-                </field>
             </fieldset>
         </fields>
     </config>
