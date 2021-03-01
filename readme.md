@@ -4,7 +4,8 @@
 1. Add the required files.  
 2. Now Zip it up and install it.  Don't move on until it installs.
 3. Now that you have done that, you can rename all the author elements in templateDetails.xml
-4. Ok now you're ready for Step 2
+4. Change the template_preview.png and template_thumnail.png files
+5. Ok now you're ready for Step 2
 
 #### We encourage Pull requests.  Please make this template better.
 
