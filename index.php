@@ -111,6 +111,11 @@ $belowFooter     = ($this->countModules('belowFooter'));
             <div class="pure-g">
                 <div class="pure-u-4-12"><p>footer</p></div>
                 <div class="pure-u-4-12"><p>footer</p></div>
+                <div class="pure-u-6-12"><p>footer</p></div>
+            </div>
+            <div class="pure-g">
+                <div class="pure-u-4-12"><p>footer</p></div>
+                <div class="pure-u-4-12"><p>footer</p></div>
                 <div class="pure-u-4-12"><p>footer</p></div>
                 <div class="pure-u-4-12"><p>footer</p></div>
             </div>
