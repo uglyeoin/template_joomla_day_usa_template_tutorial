@@ -69,41 +69,53 @@ $belowFooter     = ($this->countModules('belowFooter'));
         . "'";
     ?>
 >
-
-        <section class="pure-g" id="navigation">
-            <div class="pure-u-1-1"><p>Navigation</p></div>
+        <section>
+            <div class="pure-g" id="navigation">
+                <div class="pure-u-1-1"><p>Navigation</p></div>
+            </div>
+            </section>
+        <section>
+            <div class="pure-g" id="hero">
+                <div class="pure-u-1-1"><p>hero</p></div>
+            </div>
+            </section>
+        <section>
+            <div class="pure-g" id="belowHero">
+                <div class="pure-u-1-5"><p>belowHero - Column 1</p></div>
+                <div class="pure-u-4-5"><p>belowHero - Column 2</p></div>
+            </div>
+        </div>
+        <section>
+            <div class="pure-g" id="feature">
+                <div class="pure-u-3-5"><p>feature - column 1</p></div>
+                <div class="pure-u-2-5"><p>feature - column 2</p></div>
+            </div>
         </section>
-
-        <section class="pure-g" id="hero">
-            <div class="pure-u-1-1"><p>hero</p></div>
+        <section>
+            <div class="pure-g" id="services">
+                <div class="pure-u-1-1"><p>services</p></div>
+            </div>
         </section>
-
-        <section class="pure-g" id="belowHero">
-            <div class="pure-u-1-1"><p>belowHero</p></div>
+        <section>
+            <div class="pure-g" id="reviews">
+                <div class="pure-u-1-1"><p>reviews</p></div>
+            </div>
         </section>
-
-        <section class="pure-g" id="feature">
-            <div class="pure-u-1-1"><p>feature</p></div>
+        <section>
+            <div class="pure-g" id="callToAction">
+                <div class="pure-u-2-5"><p>callToAction - column 1</p></div>
+                <div class="pure-u-3-5"><p>callToAction - column 2</p></div>
+            </div>
         </section>
-
-        <section class="pure-g" id="services">
-            <div class="pure-u-1-1"><p>services</p></div>
+        <section>
+            <div class="pure-g" id="footer">
+                <div class="pure-u-1-1"><p>footer</p></div>
+            </div>
         </section>
-
-        <section class="pure-g" id="reviews">
-            <div class="pure-u-1-1"><p>reviews</p></div>
-        </section>
-
-        <section class="pure-g" id="callToAction">
-            <div class="pure-u-1-1"><p>callToAction</p></div>
-        </section>
-
-        <section class="pure-g" id="footer">
-            <div class="pure-u-1-1"><p>footer</p></div>
-        </section>
-
-        <section class="pure-g" id="belowFooter">
-            <div class="pure-u-1-1"><p>belowFooter</p></div>
+        <section>
+            <div class="pure-g" id="belowFooter">
+                <div class="pure-u-1-1"><p>belowFooter</p></div>
+            </div>
         </section>
 
     </body>
