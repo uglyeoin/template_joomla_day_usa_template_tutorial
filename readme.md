@@ -44,11 +44,14 @@ However, in some cases, you really don't want a component.  Say for example a pa
 4. Let's add the module content and use Joomla! to add those classes
 5. Let's start by adding the code to call the modules
 
-##Step 7 - Adding a module Chrome
+##Step 7 - Strip out the HTML
 1. You will see that modules load in their module positions.  But they are all 100% width.  If we add two it goes to a new row.
 2. Let's remove all of our HTML except the module call.  We'll add that HTML to the module Chrome.
 
-
+##Step 8 - Set up the module Chrome
+1. Let's use a module chrome to create our CSS classes and surrounding HTML structure.
+2. Create a folder named HTML
+3. Create a file called modules.php
 
 #### We encourage Pull requests.  Please make this template better.
 
