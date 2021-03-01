@@ -42,6 +42,7 @@ However, in some cases, you really don't want a component.  Say for example a pa
 2. All the 100% sections can be left as they are as well for now - it's only a tutorial
 3. But what about the 2 column sections?  We can do this within Joomla! that way if we aren't happy we can simply change the classes.
 4. Let's add the module content and use Joomla! to add those classes
+5. Let's start by adding the code to call the modules
 
 
 

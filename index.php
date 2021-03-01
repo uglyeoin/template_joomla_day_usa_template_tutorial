@@ -69,62 +69,103 @@ $belowFooter     = ($this->countModules('belowFooter'));
         . "'";
     ?>
 >
-        <section id="navigation">
-            <div class="pure-g">
-                <div class="pure-u-1-1"><p>Navigation</p></div>
-            </div>
+
+        <?php if ($navigation) : ?>
+            <section id="navigation">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <jdoc:include type="modules" name="navigation" />
+                    </div>
+                </div>
             </section>
-        <section id="hero">
-            <div class="pure-g">
-                <div class="pure-u-1-1"><p>hero</p></div>
-            </div>
+        <?php endif ?>
+
+        <?php if ($hero) : ?>
+            <section id="hero">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <jdoc:include type="modules" name="hero" />
+                    </div>
+                </div>
             </section>
+        <?php endif ?>
+
+        <?php if ($belowHero) : ?>
         <section id="belowHero">
             <div class="pure-g">
+                <jdoc:include type="modules" name="belowHero" />
                 <div class="pure-u-1-5"><p>belowHero - Column 1</p></div>
                 <div class="pure-u-4-5"><p>belowHero - Column 2</p></div>
             </div>
         </section>
-        <section id="feature">
-            <div class="pure-g">
-                <div class="pure-u-3-5"><p>feature - column 1</p></div>
-                <div class="pure-u-2-5"><p>feature - column 2</p></div>
-            </div>
-        </section>
-        <section id="services">
-            <div class="pure-g">
-                <div class="pure-u-1-1"><p>services</p></div>
-            </div>
-        </section>
-        <section id="reviews">
-            <div class="pure-g">
-                <div class="pure-u-1-1"><p>reviews</p></div>
-            </div>
-        </section>
-        <section id="callToAction">
-            <div class="pure-g">
-                <div class="pure-u-2-5"><p>callToAction - column 1</p></div>
-                <div class="pure-u-3-5"><p>callToAction - column 2</p></div>
-            </div>
-        </section>
-        <section id="footer">
-            <div class="pure-g">
-                <div class="pure-u-4-12"><p>footer</p></div>
-                <div class="pure-u-4-12"><p>footer</p></div>
-                <div class="pure-u-6-12"><p>footer</p></div>
-            </div>
-            <div class="pure-g">
-                <div class="pure-u-4-12"><p>footer</p></div>
-                <div class="pure-u-4-12"><p>footer</p></div>
-                <div class="pure-u-4-12"><p>footer</p></div>
-                <div class="pure-u-4-12"><p>footer</p></div>
-            </div>
-        </section>
-        <section id="belowFooter">
-            <div class="pure-g">
-                <div class="pure-u-1-1"><p>belowFooter</p></div>
-            </div>
-        </section>
+        <?php endif ?>
 
+        <?php if ($feature) : ?>
+            <section id="feature">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="feature" />
+                    <div class="pure-u-3-5"><p>feature - column 1</p></div>
+                    <div class="pure-u-2-5"><p>feature - column 2</p></div>
+                </div>
+            </section>
+        <?php endif ?>
+
+        <?php if ($services) : ?>
+            <section id="services">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <jdoc:include type="modules" name="services" />
+                    </div>
+                </div>
+            </section>
+        <?php endif ?>
+
+        <?php if ($reviews) : ?>
+            <section id="reviews">
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <jdoc:include type="modules" name="reviews" />
+                    </div>
+                </div>
+            </section>
+        <?php endif ?>
+
+        <?php if ($callToAction) : ?>
+            <section id="callToAction">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="callToAction" />
+                    <div class="pure-u-2-5"><p>callToAction - column 1</p></div>
+                    <div class="pure-u-3-5"><p>callToAction - column 2</p></div>
+                </div>
+            </section>
+        <?php endif ?>
+
+        <?php if ($footer) : ?>
+            <section id="footer">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="reviews" />
+                    <div class="pure-u-4-12"><p>footer</p></div>
+                    <div class="pure-u-4-12"><p>footer</p></div>
+                    <div class="pure-u-6-12"><p>footer</p></div>
+                </div>
+                <div class="pure-g">
+                <div class="pure-u-4-12"><p>footer</p></div>
+                <div class="pure-u-4-12"><p>footer</p></div>
+                <div class="pure-u-4-12"><p>footer</p></div>
+                <div class="pure-u-4-12"><p>footer</p></div>
+            </div>
+        </section>
+        <?php endif ?>
+
+        <?php if ($belowFooter) : ?>
+            <section id="belowFooter">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="belowFooter" />
+                    <div class="pure-u-1-1">
+                        <jdoc:include type="modules" name="belowFooter" />
+                    </div>
+                </div>
+            </section>
+        <?php endif ?>
     </body>
 </html>
