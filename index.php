@@ -33,6 +33,8 @@ $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
 $year     = JFactory::getDate()->format('Y');
 
+/* Component? */
+$component = ($this->params->get('mainoutput'));
 
 ?>
 
