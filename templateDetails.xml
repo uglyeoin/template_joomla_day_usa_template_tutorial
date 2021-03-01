@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" version="3.8" client="site" method="upgrade">
+    <name>Starter Bootstrap 4 Template</name>
+    <version>1.0</version>
+    <creationDate>20/08/2018</creationDate>
+    <author>YOUR NAME</author>
+    <authorEmail>YOUR EMAIL</authorEmail>
+    <copyright>YOUR COPYRIGHT</copyright>
+    <description><![CDATA[TPL_JOOMLA_LONDON_XML_DESCRIPTION]]></description>
+
+    <files>
+        <filename>component.php</filename>
+        <filename>error.php</filename>
+        <filename>offline.php</filename>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
+        <folder>html</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>scss</folder>
+    </files>
+
+    <positions>
+        <position>offcanvas</position>
+        <position>header</position>
+        <position>mainBanner</position>
+        <position>belowBanner</position>
+        <position>middle</position>
+        <position>bottom</position>
+        <position>footer</position>
+        <position>belowFooter</position>
+        <position>debug</position>
+    </positions>
+
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="sitedescription"
+                       type="text"
+                       default=""
+                       label="JGLOBAL_DESCRIPTION"
+                       description="JGLOBAL_SUBHEADING_DESC"
+                       filter="string"/>
+                <field name="framework" type="list" default="bootstrap4" required="true" label="TPL_STARTER_BOOTSTRAP_4_LABEL" description="TPL_STARTER_BOOTSTRAP_4_DESCRIPTION">
+                    <option value="">TPL_STARTER_BOOTSTRAP_4_DEFAULT_OPTION</option>
+                    <option value="bootstrap4">Bootstrap4</option>
+                    <option value="foundation6">Foundation 6</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
