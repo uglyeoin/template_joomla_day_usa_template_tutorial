@@ -54,7 +54,7 @@ $feature         = ($this->countModules('feature'));
 $services        = ($this->countModules('services'));
 $reviews         = ($this->countModules('reviews'));
 $callToAction    = ($this->countModules('callToAction'));
-$belowFooter     = ($this->countModules('footer'));
+$footer          = ($this->countModules('footer'));
 $belowFooter     = ($this->countModules('belowFooter'));
 
 ?>

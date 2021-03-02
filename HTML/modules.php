@@ -39,10 +39,11 @@ function modChrome_pureCSS($module, &$params, &$attribs)
             <?php
             /* If there is a title and it's set to show create it using the joomla parameters */
             if ($module->showtitle)
-            {
-                echo $headerTag; ?> class="<?php echo $headerClass; ?>"><?php echo $module->title; ?></ <?php echo $headerTag; ?>>
+            { ?>
+                <<?php echo $headerTag; ?> class="<?php echo $headerClass; ?>"><?php echo $module->title; ?></ <?php echo $headerTag; ?>>
+            <?php
             }
-            <?php echo $module->content; ?>
+            echo $module->content; ?>
         </div><!-- close the column -->
 
         <?php
