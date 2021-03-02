@@ -31,22 +31,17 @@ function modChrome_pureCSS($module, &$params, &$attribs)
         $headerTag     = htmlspecialchars($params->get('header_tag', 'h3'), ENT_QUOTES, 'UTF-8');
         $headerClass   = htmlspecialchars($params->get('header_class', 'page-header'), ENT_COMPAT, 'UTF-8');
 
-        /* If there is a title and it's set to show create it using the joomla parameters */
-        if ($module->showtitle)
-        {
-            ?>
-            <div class="pure-u-<?php echo $moduleClass; ?>">
-                <<?php echo $headerTag; ?> class="<?php echo $headerClass; ?>"><?php echo $module->title; ?></ <?php echo $headerTag; ?>>
-            </div>
-            <?php
-        }
-
         /* if module class exists use it, or else use 5-5 (100% width) by default */
         $moduleClass   = htmlspecialchars(ltrim($params->get('moduleclass_sfx', "5-5")), ENT_COMPAT, 'UTF-8');
-
         ?>
 
         <div class="pure-u-<?php echo $moduleClass; ?>"><!-- the column -->
+            <?php
+            /* If there is a title and it's set to show create it using the joomla parameters */
+            if ($module->showtitle)
+            {
+                echo $headerTag; ?> class="<?php echo $headerClass; ?>"><?php echo $module->title; ?></ <?php echo $headerTag; ?>>
+            }
             <?php echo $module->content; ?>
         </div><!-- close the column -->
 
