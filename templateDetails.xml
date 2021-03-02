@@ -2,7 +2,7 @@
 <extension type="template" version="3.8" client="site" method="upgrade">
     <name>Joomla! Day USA - How to build your own Joomla! Template</name>
     <version>1.0</version>
-    <creationDate>20/08/2018</creationDate>
+    <creationDate>02/03/2021</creationDate>
     <author>Eoin Oliver</author>
     <authorEmail>eoin@squareballoon.co.uk</authorEmail>
     <copyright>Eoin Oliver - but do what you want with this template</copyright>
@@ -17,6 +17,7 @@
         <filename>template_preview.png</filename>
         <filename>template_thumbnail.png</filename>
         <folder>html</folder>
+        <folder>images</folder>
         <folder>language</folder>
     </files>
 
