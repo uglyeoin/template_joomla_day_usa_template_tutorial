@@ -62,9 +62,14 @@ However, in some cases, you really don't want a component.  Say for example a pa
 2. Let's add a menu module to the "navigation" position.  Make sure it is assigned to all pages.
 3. Let's refresh the page and make sure it shows up.
 4. Now add a hero image in a "custom" module and add it to here section
-5. I've added images to the images directory 
+5. Please don't steal the images.  For reference you can find them on Adobe Stock.
+   * AdobeStock_339405013
+   * AdobeStock_392019014
+
 
 #### We encourage Pull requests.  Please make this template better.
+
+## With thanks to:
 
 ###### Thanks to [Elisa Foltyn](https://www.joomla.de/wissen/joomla-tipps-im-advent/470-tuerchen-nummer-10) who created an excellent tutorial on creating your own Joomla! template on joomla.de without which I would not have managed this.  
 ###### And thanks to [Charlie Lodder](https://volunteers.joomla.org/joomlers/1813-charlie-lodder) for answering a question on Joomla! Stack Exchange which helped me to understand Module Chromes too.

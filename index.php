@@ -72,55 +72,73 @@ $belowFooter     = ($this->countModules('belowFooter'));
 
         <?php if ($navigation) : ?>
             <section id="navigation">
-                <jdoc:include type="modules" name="navigation" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="navigation" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($hero) : ?>
             <section id="hero">
-                <jdoc:include type="modules" name="hero" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="hero" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($belowHero) : ?>
         <section id="belowHero">
-            <jdoc:include type="modules" name="belowHero" style="pureCSS" />
+            <div class="pure-g">
+                <jdoc:include type="modules" name="belowHero" style="pureCSS" />
+            </div>
         </section>
         <?php endif ?>
 
         <?php if ($feature) : ?>
             <section id="feature">
-                <jdoc:include type="modules" name="feature" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="feature" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($services) : ?>
             <section id="services">
-                <jdoc:include type="modules" name="services" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="services" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($reviews) : ?>
             <section id="reviews">
-                <jdoc:include type="modules" name="reviews" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="reviews" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($callToAction) : ?>
             <section id="callToAction">
-                <jdoc:include type="modules" name="callToAction" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="callToAction" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($footer) : ?>
             <section id="footer">
-                <jdoc:include type="modules" name="reviews" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="reviews" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($belowFooter) : ?>
             <section id="belowFooter">
-                <jdoc:include type="modules" name="belowFooter" style="pureCSS" />
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="belowFooter" style="pureCSS" />
+                </div>
             </section>
         <?php endif ?>
     </body>
