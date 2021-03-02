@@ -57,7 +57,7 @@ However, in some cases, you really don't want a component.  Say for example a pa
 1. Remember you only need to add the end part "pureCSS"
 2. Use the term "style" to add it
 
-##Step 10 - Install the template
+#Step 10 - Install the template
 1. Let's install the template so we can start adding modules
 2. Let's add a menu module to the "navigation" position.  Make sure it is assigned to all pages.
 3. Let's refresh the page and make sure it shows up.
