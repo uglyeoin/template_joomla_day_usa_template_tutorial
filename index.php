@@ -66,18 +66,17 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <jdoc:include type="head" />
     </head>
     <body
-    <?php echo "class='" .
-            $option
-	    . ' view-' . $view
-	    . ($layout ? ' layout-' . $layout : ' no-layout')
-	    . ($task ? ' task-' . $task : ' no-task')
-	    . ($itemid ? ' itemid-' . $itemid : '')
-	    . ($params->get('fluidContainer') ? ' fluid' : '')
-        . ($this->direction === 'rtl' ? ' rtl' : '')
-        . "'";
-    ?>
->
-
+        <?php echo "class='" .
+                    $option
+                    . ' view-' . $view
+                    . ($layout ? ' layout-' . $layout : ' no-layout')
+                    . ($task ? ' task-' . $task : ' no-task')
+                    . ($itemid ? ' itemid-' . $itemid : '')
+                    . ($params->get('fluidContainer') ? ' fluid' : '')
+                    . ($this->direction === 'rtl' ? ' rtl' : '')
+                    . "'";
+        ?>
+    >
         <?php if ($navigation) : ?>
             <section id="navigation">
                 <div class="container">
