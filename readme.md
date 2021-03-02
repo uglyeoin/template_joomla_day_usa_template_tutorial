@@ -57,7 +57,7 @@ However, in some cases, you really don't want a component.  Say for example a pa
 1. Remember you only need to add the end part "pureCSS"
 2. Use the term "style" to add it
 
-
+##Step 10 - 
 
 
 #### We encourage Pull requests.  Please make this template better.

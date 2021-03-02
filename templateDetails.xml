@@ -16,21 +16,17 @@
         <filename>templateDetails.xml</filename>
         <filename>template_preview.png</filename>
         <filename>template_thumbnail.png</filename>
-        <folder>css</folder>
         <folder>html</folder>
-        <folder>images</folder>
-        <folder>js</folder>
         <folder>language</folder>
-        <folder>scss</folder>
     </files>
 
     <positions>
-        <position>offcanvas</position>
-        <position>header</position>
-        <position>mainBanner</position>
-        <position>belowBanner</position>
-        <position>middle</position>
-        <position>bottom</position>
+        <position>navigation</position>
+        <position>hero</position>
+        <position>belowHero</position>
+        <position>services</position>
+        <position>reviews</position>
+        <position>callToAction</position>
         <position>footer</position>
         <position>belowFooter</position>
         <position>debug</position>
