@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" version="3.8" client="site" method="upgrade">
-    <name>Joomla! Day USA - How to build your own Joomla! Template</name>
+    <name>Joomla! Day USA</name>
     <version>1.0</version>
     <creationDate>02/03/2021</creationDate>
     <author>Eoin Oliver</author>
