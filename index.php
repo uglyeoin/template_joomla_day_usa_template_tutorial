@@ -165,7 +165,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
             <section id="footer">
                 <div class="container">
                     <div class="pure-g">
-                        <jdoc:include type="modules" name="reviews" style="pureCSS" />
+                        <jdoc:include type="modules" name="footer" style="pureCSS" />
                     </div>
                 </div>
             </section>
