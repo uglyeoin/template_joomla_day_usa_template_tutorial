@@ -67,6 +67,13 @@ However, in some cases, you really don't want a component.  Say for example a pa
    * AdobeStock_392019014
 6. Add an element for each column in the template design.  I used "custom" elements for everything except the 3 column circles as I intend to use the blog_category component.  For the footer I used 4 columns, so I used 4 "custom" modules.
 
+#Step 11 - add some CSS
+1. First we'll add the CSS / Media folders
+2. Then we'll update the XML
+3. Then we will add the SCSS Folder
+4. Then we will generate some SCSS
+5. We'll use [this plugin](https://extensions.joomla.org/extension/scss-compiler/) to generate CSS from the SCSS.
+
 
 #### We encourage Pull requests.  Please make this template better.
 
