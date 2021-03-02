@@ -40,7 +40,7 @@ $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('
 $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css');
 
 $JURI = JURI::root();
-$customCSS = $JURI . 'templates/tpl_joomla_day_usa/css/custom.css';
+$customCSS = $JURI . 'templates/joomladayusa-howtobuildyourownjoomlatemplate/css/custom.css';
 $doc->addStyleSheet($customCSS);
 
 
