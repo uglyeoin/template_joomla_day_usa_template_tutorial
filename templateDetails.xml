@@ -25,7 +25,7 @@
         <position>navigation</position>
         <position>hero</position>
         <position>belowHero</position>
-        <position>services</position>
+        <position>feature</position>
         <position>reviews</position>
         <position>callToAction</position>
         <position>footer</position>
