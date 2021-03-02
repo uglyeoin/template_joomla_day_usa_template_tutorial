@@ -34,13 +34,15 @@ function modChrome_pureCSS($module, &$params, &$attribs)
         /* If there is a title and it's set to show create it using the joomla parameters */
         if ($module->showtitle)
         {
-            echo '<div class="pure-u-1">';
-                echo '<' . $headerTag . ' class="' . $headerClass . '">' . $module->title . '</' . $headerTag . '>';
-            echo '</div>';
+            ?>
+            <div class="pure-u-<?php echo $moduleClass; ?>">
+                <<?php echo $headerTag; ?> class="<?php echo $headerClass; ?>"><?php echo $module->title; ?></ <?php echo $headerTag; ?>>
+            </div>
+            <?php
         }
 
         /* if module class exists use it, or else use 5-5 (100% width) by default */
-        $moduleClass   = htmlspecialchars($params->get('moduleclass_sfx', "5-5"), ENT_COMPAT, 'UTF-8');
+        $moduleClass   = htmlspecialchars(ltrim($params->get('moduleclass_sfx', "5-5")), ENT_COMPAT, 'UTF-8');
 
         ?>
 
