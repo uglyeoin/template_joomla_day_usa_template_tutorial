@@ -26,6 +26,7 @@
         <position>hero</position>
         <position>belowHero</position>
         <position>feature</position>
+        <position>services</position>
         <position>reviews</position>
         <position>callToAction</position>
         <position>footer</position>
