@@ -65,6 +65,7 @@ However, in some cases, you really don't want a component.  Say for example a pa
 5. Please don't steal the images.  For reference you can find them on Adobe Stock.
    * AdobeStock_339405013
    * AdobeStock_392019014
+6. Add an element for each column in the template design.  I used "custom" elements for everything except the 3 column circles as I intend to use the blog_category component.  For the footer I used 4 columns, so I used 4 "custom" modules.
 
 
 #### We encourage Pull requests.  Please make this template better.
