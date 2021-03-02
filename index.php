@@ -38,7 +38,7 @@ $component = ($this->params->get('mainoutput'));
 
 $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('integrity' => 'sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd', 'crossorigin' => 'anonymous'));
 $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css');
-$doc->addStyleSheet('css/custom.css');
+$doc->addStyleSheet(JURI::root() . 'templates/tpl_joomla_day_usa/css/custom.css');
 
 
 $debug           = ($this->countModules('debug'));
