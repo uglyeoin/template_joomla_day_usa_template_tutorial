@@ -72,55 +72,73 @@ $belowFooter     = ($this->countModules('belowFooter'));
 
         <?php if ($navigation) : ?>
             <section id="navigation">
-                <jdoc:include type="modules" name="navigation" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="navigation" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($hero) : ?>
             <section id="hero">
-                <jdoc:include type="modules" name="hero" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="hero" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($belowHero) : ?>
         <section id="belowHero">
-            <jdoc:include type="modules" name="belowHero" />
+            <div class="pure-g">
+                    <jdoc:include type="modules" name="belowHero" />
+            </div>
         </section>
         <?php endif ?>
 
         <?php if ($feature) : ?>
             <section id="feature">
-                <jdoc:include type="modules" name="feature" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="feature" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($services) : ?>
             <section id="services">
-                <jdoc:include type="modules" name="services" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="services" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($reviews) : ?>
             <section id="reviews">
-                <jdoc:include type="modules" name="reviews" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="reviews" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($callToAction) : ?>
             <section id="callToAction">
-                <jdoc:include type="modules" name="callToAction" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="callToAction" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($footer) : ?>
             <section id="footer">
-                <jdoc:include type="modules" name="reviews" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="reviews" />
+                </div>
             </section>
         <?php endif ?>
 
         <?php if ($belowFooter) : ?>
             <section id="belowFooter">
-                <jdoc:include type="modules" name="belowFooter" />
+                <div class="pure-g">
+                        <jdoc:include type="modules" name="belowFooter" />
+                </div>
             </section>
         <?php endif ?>
     </body>

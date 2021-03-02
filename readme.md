@@ -46,7 +46,7 @@ However, in some cases, you really don't want a component.  Say for example a pa
 
 ##Step 7 - Adding a module Chrome
 1. You will see that modules load in their module positions.  But they are all 100% width.  If we add two it goes to a new row.
-2. Let's remove all of our HTML except the module call.  We'll add that HTML to the module Chrome.
+2. Let's remove all of our HTML except the module call and the rows.  We'll add that HTML to the module Chrome.
 
 
 
