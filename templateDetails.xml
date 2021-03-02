@@ -16,9 +16,11 @@
         <filename>templateDetails.xml</filename>
         <filename>template_preview.png</filename>
         <filename>template_thumbnail.png</filename>
+        <folder>css</folder>
         <folder>html</folder>
         <folder>images</folder>
         <folder>language</folder>
+        <folder>scss</folder>
     </files>
 
     <positions>
