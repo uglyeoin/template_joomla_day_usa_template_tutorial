@@ -73,7 +73,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($navigation) : ?>
             <section id="navigation">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="navigation" />
+                    <jdoc:include type="modules" name="navigation" />
                 </div>
             </section>
         <?php endif ?>
@@ -81,7 +81,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($hero) : ?>
             <section id="hero">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="hero" />
+                    <jdoc:include type="modules" name="hero" />
                 </div>
             </section>
         <?php endif ?>
@@ -89,7 +89,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($belowHero) : ?>
         <section id="belowHero">
             <div class="pure-g">
-                    <jdoc:include type="modules" name="belowHero" />
+                <jdoc:include type="modules" name="belowHero" />
             </div>
         </section>
         <?php endif ?>
@@ -97,7 +97,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($feature) : ?>
             <section id="feature">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="feature" />
+                    <jdoc:include type="modules" name="feature" />
                 </div>
             </section>
         <?php endif ?>
@@ -105,7 +105,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($services) : ?>
             <section id="services">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="services" />
+                    <jdoc:include type="modules" name="services" />
                 </div>
             </section>
         <?php endif ?>
@@ -113,7 +113,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($reviews) : ?>
             <section id="reviews">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="reviews" />
+                    <jdoc:include type="modules" name="reviews" />
                 </div>
             </section>
         <?php endif ?>
@@ -121,7 +121,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($callToAction) : ?>
             <section id="callToAction">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="callToAction" />
+                    <jdoc:include type="modules" name="callToAction" />
                 </div>
             </section>
         <?php endif ?>
@@ -129,7 +129,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($footer) : ?>
             <section id="footer">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="reviews" />
+                    <jdoc:include type="modules" name="reviews" />
                 </div>
             </section>
         <?php endif ?>
@@ -137,7 +137,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($belowFooter) : ?>
             <section id="belowFooter">
                 <div class="pure-g">
-                        <jdoc:include type="modules" name="belowFooter" />
+                    <jdoc:include type="modules" name="belowFooter" />
                 </div>
             </section>
         <?php endif ?>
