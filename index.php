@@ -110,7 +110,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
             </section>
         <?php endif ?>
 
-        <?php if ($services) : ?>
+        <?php if ($services || $component) : ?>
             <section id="services">
                 <div class="container">
                     <div class="pure-g">
