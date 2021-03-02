@@ -53,7 +53,7 @@ However, in some cases, you really don't want a component.  Say for example a pa
 2. Create a folder named HTML
 3. Create a file called modules.php
 
-#Step 9 - Add the module chrome style
+
 
 
 #### We encourage Pull requests.  Please make this template better.
