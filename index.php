@@ -113,9 +113,12 @@ $belowFooter     = ($this->countModules('belowFooter'));
         <?php if ($services || $component) : ?>
             <section id="services">
                 <div class="container">
+                    <?php if ($services) : ?>
                     <div class="pure-g">
                         <jdoc:include type="modules" name="services" style="pureCSS" />
                     </div>
+                    <?php endif; ?>
+
                     <?php if ($component == "1") : ?>
                     <div role="main">
                         <div class="container">
