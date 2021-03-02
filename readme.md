@@ -53,6 +53,10 @@ However, in some cases, you really don't want a component.  Say for example a pa
 2. Create a folder named HTML
 3. Create a file called modules.php
 
+#Step 9 - add the module chrome style to the HTML
+1. Remember you only need to add the end part "pureCSS"
+2. Use the term "style" to add it
+
 
 
 
