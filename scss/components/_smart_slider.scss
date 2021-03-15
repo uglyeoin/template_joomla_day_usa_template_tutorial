@@ -1,0 +1,45 @@
+#reviews {
+  background: $blue--medium;
+  @include breakpoint(desktop) {
+    padding-bottom: 2.5rem;
+  }
+  /* Module Title */
+  h3 {
+    &.module-title {
+      color: $white;
+      font-size: 3rem;
+      line-height: 75px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+
+  /* Testimonial body */
+  p {
+    color: $white;
+    font-size: 1.125rem;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  /* Reviewer name */
+  h4 {
+    color: $white;
+    font-size: 1.5rem;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  /* Reviewer location */
+  h5 {
+    color: $white;
+    font-size: 0.75rem;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+}

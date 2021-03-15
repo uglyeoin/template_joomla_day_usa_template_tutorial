@@ -1,0 +1,9 @@
+#hero {
+  @include breakpoint(desktop) {
+    margin-top: -152px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

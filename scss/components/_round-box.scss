@@ -1,0 +1,59 @@
+.round-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+
+  .round-box {
+    min-width: 250px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: -104px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 100% 100% 100% 100%;
+    z-index: 1;
+    background: $white;
+
+    @include breakpoint(desktop) {
+      min-width: 330px;
+      width: 330px;
+      height: 330px;
+      padding: 0 20px 90px 93px;
+      margin-left: -10rem;
+      margin-top: -300px;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+
+    h2 {
+      font-size: 2.8125rem;
+      line-height: 45px;
+      color: $blue--medium;
+      font-weight: 400;
+      margin: 0;
+      @include breakpoint(desktop) {
+        font-size: 4.6875rem;
+        line-height: 75px;
+      }
+      &:first-of-type {
+        margin-top: 7rem;
+      }
+    }
+  }
+}

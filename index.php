@@ -38,12 +38,14 @@ $year     = JFactory::getDate()->format('Y');
 /* Component? */
 $component = ($this->params->get('mainoutput'));
 
+$JURI = JURI::root();
+
 $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('integrity' => 'sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd', 'crossorigin' => 'anonymous'));
 $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css');
-
-$JURI = JURI::root();
 $customCSS = $JURI . 'templates/' . $templateName . '/css/custom.css';
 $doc->addStyleSheet($customCSS);
+
+$doc->addScript($JURI . 'templates/' . $templateName . '/js/menu.js', "text/javascript", true, false, array('version' => 'auto'));
 
 
 $debug           = ($this->countModules('debug'));
@@ -89,10 +91,8 @@ $belowFooter     = ($this->countModules('belowFooter'));
 
         <?php if ($hero) : ?>
             <section id="hero">
-                <div class="container">
-                    <div class="pure-g">
-                        <jdoc:include type="modules" name="hero" style="pureCSS" />
-                    </div>
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="hero" style="pureCSS" />
                 </div>
             </section>
         <?php endif ?>
@@ -109,15 +109,13 @@ $belowFooter     = ($this->countModules('belowFooter'));
 
         <?php if ($feature) : ?>
             <section id="feature">
-                <div class="container">
-                    <div class="pure-g">
-                        <jdoc:include type="modules" name="feature" style="pureCSS" />
-                    </div>
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="feature" style="pureCSS" />
                 </div>
             </section>
         <?php endif ?>
 
-        <?php if ($services || $component) : ?>
+        <?php if ($services) : ?>
             <section id="services">
                 <div class="container">
                     <?php if ($services) : ?>
@@ -125,21 +123,22 @@ $belowFooter     = ($this->countModules('belowFooter'));
                         <jdoc:include type="modules" name="services" style="pureCSS" />
                     </div>
                     <?php endif; ?>
-
-                    <?php if ($component == "1") : ?>
-                    <div role="main">
-                        <div class="container">
-                            <div class="pure-g">
-                                <section id="component">
-                                    <jdoc:include type="message" />
-                                    <jdoc:include type="component" />
-                                </section>
-                            </div>
-                        </div>
-                    <?php endif ?>
                 </div>
             </section>
         <?php endif ?>
+
+        <section id="main" role="main">
+            <div class="container">
+                <div class="pure-g">
+                    <section id="component">
+                        <jdoc:include type="message" />
+                        <jdoc:include type="component" />
+                    </section>
+                </div>
+            </div>
+        </section>
+
+
 
         <?php if ($reviews) : ?>
             <section id="reviews">
@@ -153,10 +152,8 @@ $belowFooter     = ($this->countModules('belowFooter'));
 
         <?php if ($callToAction) : ?>
             <section id="callToAction">
-                <div class="container">
-                    <div class="pure-g">
-                        <jdoc:include type="modules" name="callToAction" style="pureCSS" />
-                    </div>
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="callToAction" style="pureCSS" />
                 </div>
             </section>
         <?php endif ?>
