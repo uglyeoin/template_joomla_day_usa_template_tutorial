@@ -1,0 +1,25 @@
+/* Brand Colours */
+
+$blue--medium:    #025373;
+$blue--light:     #9EDCE2;
+$blue--dark:      #002633;
+
+/* Generic Colours */
+$white:         #fff;
+
+/* Backgrounds */
+#belowHero {
+  background: $blue--medium;
+  color: $white;
+}
+
+#feature {
+  background: $blue--light;
+  color: $blue--medium;
+}
+
+#callToAction {
+  background: $blue--dark;
+  color: $white;
+}
+

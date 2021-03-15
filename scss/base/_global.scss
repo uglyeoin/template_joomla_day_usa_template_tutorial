@@ -1,0 +1,32 @@
+html,body{
+    min-height: 100%;
+   
+}
+.container {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 35.5em) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 48em) {
+    .container {
+        max-width: 30rem;
+    }
+}
+@media screen and (min-width: 64em) {
+    .container {
+        max-width: 56rem;
+    }
+}
+@media screen and (min-width: 80em) {
+    .container {
+        max-width: 75rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}

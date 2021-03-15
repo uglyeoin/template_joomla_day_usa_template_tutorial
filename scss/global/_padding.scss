@@ -1,0 +1,15 @@
+$padding: 0.638rem;
+
+//.pure-g [class*="pure-u"] {
+//  &.padding {
+//    padding: $padding;
+//  }
+//}
+
+.padding {
+  padding: $padding;
+}
+
+.padding--width--double {
+  padding: $padding * 2;
+}
