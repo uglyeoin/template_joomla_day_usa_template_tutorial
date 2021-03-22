@@ -1,0 +1,48 @@
+/*
+$above-large-desktop: 74.939rem;  // > 1199.024px
+$large-desktop: 74.938rem;        // 1199.024px
+$desktop: 59.938rem;              // 959.008px
+$tablet: 47.938rem;               // 767.008px
+$large-mobile: 29.938rem;         // 479.008px
+*/
+
+@mixin breakpoint($class) {
+  @if $class == above-large-desktop {
+    @media (min-width: 74.939rem) {
+      @content;
+    }
+  } @else if $class == large-desktop {
+    @media (min-width: 74.938rem) {
+      @content;
+    }
+  } @else if $class == desktop {
+    @media (min-width: 59.938rem) {
+      @content;
+    }
+  } @else if $class == tablet {
+    @media (min-width: 47.938rem) {
+      @content;
+    }
+  } @else if $class == tablet-landscape {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      @content;
+    }
+  } @else if $class == large-mobile {
+    @media (min-width: 29.938rem) {
+      @content;
+    }
+  } @else if $class == force-mobile {
+    @media (max-width: 47.938rem) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: above-large-desktop, large-desktop, desktop, tablet, tablet-landscape, large-mobile";
+  }
+}
+
+/* Example Usage */
+/*
+        @include breakpoint(desktop) {
+            // some styles
+        }
+ */

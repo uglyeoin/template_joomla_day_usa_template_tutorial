@@ -1,14 +1,16 @@
 #feature,
 #callToAction {
   color: #ffffff;
+  padding: 0;
   .pure-g {
     align-items: center;
   }
   .pure-u-md-8-24 {
+    padding: $padding;
     @include breakpoint(desktop) {
       max-width: 372px;
       margin-left: auto;
-      padding: 20px 20px 20px 88px;
+      padding: 20px 88px 20px 20px ;
     }
   }
   .module-title {
@@ -38,11 +40,18 @@
   h3, p, li {
     color: $blue--medium;
   }
-  .pure-u-md-8-24 {
+  div:nth-of-type(2).pure-u-md-8-24 {
     @include breakpoint(desktop) {
       margin-left: 0;
-      padding: 20px 88px 20px 20px ;
+      padding: 20px 20px 20px 88px;
     }
   }
 }
+
+#feature {
+  div:nth-of-type(2) {
+    padding: $padding;
+  }
+}
+
 

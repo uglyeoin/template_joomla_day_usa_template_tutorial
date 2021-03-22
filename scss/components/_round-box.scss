@@ -52,7 +52,10 @@
         line-height: 75px;
       }
       &:first-of-type {
-        margin-top: 7rem;
+        margin-top: 1rem;
+        @include breakpoint(desktop) {
+          margin-top: 7rem;
+        }
       }
     }
   }

@@ -1,6 +1,9 @@
 #belowHero {
-  .custom {
-    padding: 45px 0 45px 20px;
+  position: relative;
+  .custompure-u-1 {
+    @include breakpoint(desktop) {
+      padding: 45px 0 45px 20px;
+    }
   }
   p {
     margin: 0;
@@ -8,6 +11,6 @@
     line-height: 45px;
     font-weight: 500;
     color: $white;
-    text-align: left;
+    text-align: center;
   }
 }

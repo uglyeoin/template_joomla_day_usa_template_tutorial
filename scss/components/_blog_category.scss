@@ -17,8 +17,10 @@
       line-height: 45px;
       color: $blue--medium;
       font-weight: 500;
-      margin: 0 auto 20px;
-      max-width: 64%;
+      @include breakpoint(desktop) {
+        margin: 0 auto 20px;
+        max-width: 64%;
+      }
     }
   }
   /* Intro Image */
