@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,26 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a03c83b-db26-4efd-8f56-8e1804766be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/components/_footer-menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/_megamenu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/form/_general.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/form/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/global/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/global/_url.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_below_hero_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_below_hero_text.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_blog_category.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_blog_category.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_image_and_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_image_and_text.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_menu.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_round-box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_round-box.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_smart_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_smart_slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global/_color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/global/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global/_padding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_padding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templateDetails.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templateDetails.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
@@ -95,7 +85,9 @@
       <workItem from="1615822334902" duration="226000" />
       <workItem from="1615822567791" duration="58000" />
       <workItem from="1615822661524" duration="31000" />
-      <workItem from="1615822693814" duration="11524000" />
+      <workItem from="1615822693814" duration="15053000" />
+      <workItem from="1617383902594" duration="348000" />
+      <workItem from="1617634544335" duration="29000" />
     </task>
     <servers />
   </component>
@@ -119,6 +111,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="691" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1616359383202" />
+    <state x="708" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1616436100364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="708" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1616436100364" />
     <state x="741" y="275" key="FileChooserDialogImpl" timestamp="1615822716441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
