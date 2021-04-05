@@ -23,12 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a03c83b-db26-4efd-8f56-8e1804766be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/global/_url.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_megamenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_megamenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/global/_color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_color.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
       <workItem from="1615822661524" duration="31000" />
       <workItem from="1615822693814" duration="15053000" />
       <workItem from="1617383902594" duration="348000" />
-      <workItem from="1617634544335" duration="29000" />
+      <workItem from="1617634544335" duration="1677000" />
     </task>
     <servers />
   </component>

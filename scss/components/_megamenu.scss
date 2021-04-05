@@ -1,6 +1,7 @@
 #navigation {
   z-index: 99;
   position: relative;
+  background: $blue--glowcare;
 }
 
 .dj-megamenu-override {
@@ -28,7 +29,7 @@
       font-weight: 600;
       font-size: 1.25rem;
       line-height: 24px;
-      color: $blue--medium;
+      color: $white;
       text-transform: uppercase;
     }
     &.hover,
@@ -37,7 +38,7 @@
         &.dj-up_a {
           background: none;
           border: none;
-          border-bottom: $blue--medium 1px solid;
+          border-bottom: $white 1px solid;
           padding-bottom: $padding / 2;
         }
       }
@@ -49,6 +50,9 @@
       font-size: 1rem;
       a {
         padding: 7px 10px 0 0;
+        &.active {
+          border: none;
+        }
       }
     }
     &:last-of-type {
@@ -56,21 +60,23 @@
       &.hover,
       &.active {
         a {
+          background: $grey--light;
           &.dj-up_a {
-            background-color: $blue--medium;
-            color: $white;
+            background-color: $white;
+            color: $blue--glowcare;
+            border: none;
+            padding: 8px 20px;
           }
         }
       }
       a {
         font-size: 1.25rem;
         line-height: 25px;
-        background-color: $blue--medium;
-        color: $white;
+        background-color: $white;
+        color: $blue--glowcare;
         font-weight: 600;
         padding: 8px 20px;
         outline: none;
-        border: none;
         border-radius: 25px 25px 25px 25px;
         -webkit-transition: all 500ms ease-in-out 0s;
         transition: all 500ms ease-in-out 0s;
@@ -84,12 +90,12 @@
 
 .dj-megamenu-offcanvas {
   &.dj-fa-5 {
-    background: $blue--medium;
+    background: $white;
     color: $white;
   }
   a {
     background: none;
-    color: $blue--medium;
+    color: $white;
   }
   a {
     &.dj-mobile-open-btn {
@@ -107,7 +113,7 @@
       background: none;
       padding: 0 $padding $padding;
       font-size: 2rem;
-      color: $blue--medium;
+      color: $white;
     }
   }
 }
@@ -124,12 +130,12 @@
 }
 
 .dj-mobileitem {
-  color: $blue--medium;
+  color: $white;
   text-align: center;
   line-height: 60px;
   padding: 10px 0;
   a {
-    color: $blue--medium;
+    color: $white;
     font-size: 2rem;
     padding: 15px;
   }
