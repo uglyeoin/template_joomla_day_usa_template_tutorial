@@ -73,7 +73,7 @@ $belowFooter     = ($this->countModules('belowFooter'));
             <div class="pure-g">
                 <div class="pure-u-1-1"><p>Navigation</p></div>
             </div>
-            </section>
+        </section>
         <section id="hero">
             <div class="pure-g">
                 <div class="pure-u-1-1"><p>hero</p></div>
