@@ -33,7 +33,7 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
-$year     = JFactory::getDate()->format('Y');
+$year     = Factory::getDate()->format('Y');
 
 /* Component? */
 $component = ($this->params->get('mainoutput'));
@@ -41,6 +41,7 @@ $component = ($this->params->get('mainoutput'));
 $JURI = JURI::root();
 
 $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('integrity' => 'sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd', 'crossorigin' => 'anonymous'));
+$doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css');
 $customCSS = $JURI . 'templates/' . $templateName . '/css/custom.css';
 $doc->addStyleSheet($customCSS);
 

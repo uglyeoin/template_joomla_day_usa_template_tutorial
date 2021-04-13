@@ -24,8 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1a03c83b-db26-4efd-8f56-8e1804766be9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_megamenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_megamenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global/_color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,9 +51,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tpl_joomla_day_usa--inner-page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/mod_accreditations" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,7 +92,8 @@
       <workItem from="1615822661524" duration="31000" />
       <workItem from="1615822693814" duration="15053000" />
       <workItem from="1617383902594" duration="348000" />
-      <workItem from="1617634544335" duration="1677000" />
+      <workItem from="1617634544335" duration="5728000" />
+      <workItem from="1618332994446" duration="207000" />
     </task>
     <servers />
   </component>
@@ -112,10 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1616436100364" />
-    <state x="741" y="275" key="FileChooserDialogImpl" timestamp="1615822716441">
+    <state x="741" y="275" key="FileChooserDialogImpl" timestamp="1618314541602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1615822716441" />
+    <state x="741" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1618314541602" />
     <state x="462" y="165" key="SettingsEditor" timestamp="1615822135739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
