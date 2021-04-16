@@ -2,7 +2,7 @@
   background: urL('../../../images/backgrounds/Footer.jpg') no-repeat;
   background-size: cover;
   @include breakpoint(desktop) {
-    padding: 95px 5px 57px;
+    padding: 55px 5px 57px;
   }
 
   .pure-g {
@@ -55,6 +55,10 @@
     margin: 0;
   }
 
+  li {
+    margin: 6px 0;
+  }
+
   li:not(:last-child) {
     padding-right: 13px;
     margin-right: 13px;
@@ -80,5 +84,8 @@
   }
   .custompure-u-md-6-24.pure-u-sm-12-24 {
     width: revert;
+  }
+  .footer-social {
+    text-align: center;
   }
 }

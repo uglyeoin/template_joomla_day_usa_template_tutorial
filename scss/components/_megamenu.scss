@@ -43,46 +43,70 @@
         }
       }
     }
-    &:first-of-type {
-      width: 190px;
-      height: auto;
-      line-height: normal;
-      font-size: 1rem;
-      a {
-        padding: 7px 10px 0 0;
+  }
+  > li {
+      &:first-of-type {
+        width: 190px;
+        height: auto;
+        line-height: normal;
+        font-size: 1rem;
+        a {
+          padding: 7px 10px 0 0;
+          &.dj-up_a {
+            border: none;
+          }
+          &.active {
+            border: none;
+          }
+        }
+      }
+      &:last-of-type {
+        padding-left: 60px;
+        &.hover,
         &.active {
+          a {
+            background: $grey--light;
+            &.dj-up_a {
+              background-color: $white;
+              color: $blue--glowcare;
+              border: none;
+              padding: 8px 20px;
+            }
+          }
+        }
+        a {
+          font-size: 1.25rem;
+          line-height: 25px;
+          background-color: $white;
+          color: $blue--glowcare;
+          font-weight: 600;
+          padding: 8px 20px;
+          outline: none;
+          border-radius: 25px 25px 25px 25px;
+          -webkit-transition: all 500ms ease-in-out 0s;
+          transition: all 500ms ease-in-out 0s;
+          text-decoration: none;
+          text-transform: uppercase;
           border: none;
         }
       }
     }
-    &:last-of-type {
-      padding-left: 60px;
-      &.hover,
-      &.active {
-        a {
-          background: $grey--light;
-          &.dj-up_a {
-            background-color: $white;
-            color: $blue--glowcare;
-            border: none;
-            padding: 8px 20px;
-          }
-        }
-      }
+}
+
+.dj-up.parent {
+  position: relative;
+}
+.dj-subwrap {
+  position: absolute;
+  top: 0;
+  margin-top: 60px;
+  background: rgba($white, 0.8);
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
       a {
-        font-size: 1.25rem;
-        line-height: 25px;
-        background-color: $white;
-        color: $blue--glowcare;
-        font-weight: 600;
-        padding: 8px 20px;
-        outline: none;
-        border-radius: 25px 25px 25px 25px;
-        -webkit-transition: all 500ms ease-in-out 0s;
-        transition: all 500ms ease-in-out 0s;
-        text-decoration: none;
-        text-transform: uppercase;
-        border: none;
+        color: $blue--dark;
       }
     }
   }

@@ -45,16 +45,16 @@ $doc->addStyleSheet('https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.
 $customCSS = $JURI . 'templates/' . $templateName . '/css/custom.css';
 $doc->addStyleSheet($customCSS);
 
-$debug           = ($this->countModules('debug'));
-$navigation      = ($this->countModules('navigation'));
-$hero            = ($this->countModules('hero'));
-$belowHero       = ($this->countModules('belowHero'));
-$feature         = ($this->countModules('feature'));
-$services        = ($this->countModules('services'));
-$reviews         = ($this->countModules('reviews'));
-$callToAction    = ($this->countModules('callToAction'));
-$footer          = ($this->countModules('footer'));
-$belowFooter     = ($this->countModules('belowFooter'));
+$debug           = $this->countModules('debug');
+$navigation      = $this->countModules('navigation');
+$hero            = $this->countModules('hero');
+$belowHero       = $this->countModules('belowHero');
+$feature         = $this->countModules('feature');
+$services        = $this->countModules('services');
+$reviews         = $this->countModules('reviews');
+$callToAction    = $this->countModules('callToAction');
+$footer          = $this->countModules('footer');
+$belowFooter     = $this->countModules('belowFooter');
 
 ?>
 

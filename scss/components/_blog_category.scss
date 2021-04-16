@@ -1,7 +1,7 @@
 #main {
   padding: $padding * 4 $padding;
   .page-header {
-    h1 {
+    h1, h2 {
       text-align: center;
       font-size: 4.6875rem;
       line-height: 75px;
@@ -9,6 +9,7 @@
       font-weight: 400;
       margin-bottom: 10px;
     }
+
   }
   .category-desc {
     p {
@@ -25,11 +26,12 @@
   }
   /* Intro Image */
   .item-image {
-    width: 330px;
-    height: 330px;
     border-radius: 100% 100% 100% 100%;
     position: relative;
     margin: 30px auto 24px;
+    max-width: 100%;
+    width: 330px;
+    height: 330px;
     img {
       width: 100%;
       -o-object-fit: cover;
@@ -37,6 +39,17 @@
       border-radius: 100% 100% 100% 100%;
       max-width: 100%;
       height: auto;
+    }
+  }
+  .pure-u-md-8-24 {
+    .item-image {
+      width: 330px;
+      height: 330px;
+    }
+  }
+  .pure-u-md-6-24 {
+    .item-image {
+
     }
   }
   .items-leading {
