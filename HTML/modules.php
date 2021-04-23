@@ -35,7 +35,8 @@ function modChrome_pureCSS($module, &$params, &$attribs)
         $moduleClass   = htmlspecialchars(ltrim($params->get('moduleclass_sfx', "5-5")), ENT_COMPAT, 'UTF-8');
         ?>
 
-        <div class="<?php echo $moduleClass; ?>"><!-- the column -->
+        <!-- the column -->
+        <div class="<?php echo $moduleClass; ?>">
             <?php
             /* If there is a title and it's set to show create it using the joomla parameters */
             if ($module->showtitle)
