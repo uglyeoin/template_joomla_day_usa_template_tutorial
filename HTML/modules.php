@@ -36,7 +36,7 @@ function modChrome_pureCSS($module, &$params, &$attribs)
         ?>
 
         <!-- the column -->
-        <div class="<?php echo $moduleClass; ?>">
+        <div class="module--outer <?php echo $moduleClass; ?>">
             <?php
             /* If there is a title and it's set to show create it using the joomla parameters */
             if ($module->showtitle)
