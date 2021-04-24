@@ -1,23 +1,35 @@
 <?php
 /**
- * @package     Joomla.Site
- * @subpackage  Templates.protostar
+ * @package    tpl_joomla_london
  *
- * @copyright   Copyright (C) 2005 - 2020 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author     Eoin <your@email.com>
+ * @copyright  A copyright
+ * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @link       http://your.url.com
  */
 
 defined('_JEXEC') or die;
 
-/** @var JDocumentError $this */
+use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
 
-use \Joomla\CMS\Factory;
+$app             = Factory::getApplication();
+$doc             = Factory::getDocument();
+$user            = Factory::getUser();
+$this->language  = $doc->language;
+$this->direction = $doc->direction;
 
-$app  = Factory::getApplication();
-$user = Factory::getUser();
+// Output as HTML5
+$doc->setHtml5(true);
 
 // Getting params from template
 $params = $app->getTemplate(true)->params;
+
+// Get the name of the template
+$templateName = $app->getTemplate();
+
+// Get the root of the domain name e.g. www.domainname.com and assign it to variable
+$JURI = JURI::root();
 
 // Detecting Active Variables
 $option   = $app->input->getCmd('option', '');
@@ -26,24 +38,15 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $format   = $app->input->getCmd('format', 'html');
-$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
-
-if ($task === 'edit' || $layout === 'form')
-{
-    $fullWidth = 1;
-}
-else
-{
-    $fullWidth = 0;
-}
-
+$sitename = $app->get('sitename');
 
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <jdoc:include type="head" />
+    <link href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css" rel="stylesheet" />
+    <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/error.css" rel="stylesheet" />
 </head>
 <body
     <?php echo "class='" .
@@ -57,15 +60,15 @@ else
         . "'";
     ?>
 >
-    <?php if ($navigation) : ?>
-        <section id="navigation">
-            <div class="container">
-                <div class="pure-g">
-                    <jdoc:include type="modules" name="navigation" style="pureCSS" />
-                </div>
+    <section id="navigation" role="navigation">
+        <div class="container">
+            <div class="pure-g">
+                <?php
+                    echo $this->loadRenderer('modules')->render('navigation', array('style' => 'pureCSS'));
+                ?>
             </div>
-        </section>
-    <?php endif ?>
+        </div>
+    </section>
     <section id="main" role="main">
         <div class="container">
             <div class="pure-g">
@@ -130,27 +133,24 @@ else
             </div>
         </div>
     </section>
-    <?php if ($footer) : ?>
-        <section id="footer">
-            <div class="container">
-                <div class="pure-g">
-                    <jdoc:include type="modules" name="footer" style="pureCSS" />
-                </div>
+    <section id="footer">
+        <div class="container">
+            <div class="pure-g">
+                <?php
+                    echo $this->loadRenderer('modules')->render('footer', array('style' => 'pureCSS'));
+                ?>
             </div>
-        </section>
-    <?php endif ?>
+        </div>
+    </section>
 
-    <?php if ($belowFooter) : ?>
-        <section id="belowFooter">
-            <div class="container">
-                <div class="pure-g">
-                    <jdoc:include type="modules" name="belowFooter" style="pureCSS" />
-                </div>
+    <section id="belowFooter">
+        <div class="container">
+            <div class="pure-g">
+                <?php
+                    echo $this->loadRenderer('modules')->render('belowFooter', array('style' => 'pureCSS'));
+                ?>
             </div>
-        </section>
-    <?php endif ?>
-<?php if ($format === 'html') : ?>
-    <?php echo $this->loadRenderer('modules')->render('debug', array('style' => 'none')); ?>
-<?php endif; ?>
+        </div>
+    </section>
 </body>
 </html>

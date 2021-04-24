@@ -110,7 +110,7 @@ $belowFooter     = $this->countModules('belowFooter');
         ?>
     >
         <?php if ($navigation) : ?>
-            <section id="navigation">
+            <section id="navigation" role="navigation">
                 <div class="container">
                     <div class="pure-g">
                         <jdoc:include type="modules" name="navigation" style="pureCSS" />

@@ -10,12 +10,28 @@
 defined('_JEXEC') or die;
 
 /** @var JDocumentHtml $this */
+use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
+
 
 $twofactormethods = JAuthenticationHelper::getTwoFactorMethods();
-$app              = JFactory::getApplication();
+$app              = Factory::getApplication();
 
 // Output as HTML5
 $this->setHtml5(true);
+
+// Get the name of the template
+$templateName = $app->getTemplate();
+
+// Get the root of the domain name e.g. www.domainname.com and assign it to variable
+$JURI = JURI::root();
+
+
+/* Pure CSS Grids */
+HTMLHelper::_('stylesheet', 'https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
+
+/* Our custom CSS based on SCSS */
+HTMLHelper::_('stylesheet', $JURI . 'templates/' . $templateName . '/css/custom.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
 
 ?>
 <!DOCTYPE html>
@@ -26,6 +42,16 @@ $this->setHtml5(true);
 </head>
 <body>
 <div class="container">
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <a class="dj-up_a active " href="/" aria-expanded="false"><span><img class="dj-icon" src="/images/brand-assets/GlowCare--logo--blue.svg" alt="Home"></span></a>
+        </div>
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <?php echo JText::_('JDAY_USA_SITE_OFFLINE_MESSAGE'); ?>
+        </div>
+    </div>
     <div class="pure-g">
         <div class="pure-u-1">
             <jdoc:include type="message" />
