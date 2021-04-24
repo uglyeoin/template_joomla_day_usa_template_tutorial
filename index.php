@@ -11,6 +11,7 @@
 defined('_JEXEC') or die;
 
 use \Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
 
 $app             = Factory::getApplication();
 $doc             = Factory::getDocument();
@@ -36,8 +37,32 @@ $year     = JFactory::getDate()->format('Y');
 /* Component? */
 $component = ($this->params->get('mainoutput'));
 
-$doc->addStylesheet('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('integrity' => 'sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd', 'crossorigin' => 'anonymous'));
+/* How to add a Stylesheet */
+/* Help file: https://api.joomla.org/cms-3/classes/Joomla.CMS.HTML.HTMLHelper.html */
+/*
+ * example code
+ * HTMLHelper::_('stylesheet', $file, $options, $attributes);
+ *
+Arguments
+$file (string)
+    Path to file
+$options (array)
+    Array of options. Example: array('version' => 'auto', 'conditional' => 'lt IE 9')
+$attribs (array)
+    Array of attributes. Example: array('id' => 'scriptid', 'async' => 'async', 'data-test' => 1)
+Response (array|string|null)
+nothing if $returnPath is false, null, path or array of path if specific CSS browser files were detected
+*/
 
+/* Pure CSS Grids */
+HTMLHelper::_('stylesheet', 'https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
+
+/* Our custom CSS based on SCSS */
+HTMLHelper::_('stylesheet', $JURI . 'templates/' . $templateName . '/css/custom.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
+
+/* How to add JavaScript */
+/* HTMLHelper::_('script', $file,$options, $attributes); */
+//HTMLHelper::_('script', 'mod_xxx/custom.js', ['version' => 'auto', 'relative' => true]);
 
 ?>
 
