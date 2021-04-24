@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a03c83b-db26-4efd-8f56-8e1804766be9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Step_5" />
+        <entry key="$PROJECT_DIR$" value="Step-3-Add-CSS-and-JS" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,11 +59,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="741" y="275" key="FileChooserDialogImpl" timestamp="1614632757577">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="741" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1614632757577" />
   </component>
 </project>
