@@ -1,38 +1,40 @@
 <?php
 /**
- * @package    tpl_joomla_london
+ * @package     Joomla.Site
+ * @subpackage  Templates.protostar
  *
- * @author     Eoin <your@email.com>
- * @copyright  A copyright
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       http://your.url.com
+ * @copyright   Copyright (C) 2005 - 2020 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 defined('_JEXEC') or die;
 
+<<<<<<< HEAD
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Uri\Uri;
+=======
+/** @var JDocumentError $this */
+>>>>>>> parent of 3628a6b (improved offline page, improved error page, added language string for offline page, added error.css)
 
-$app             = Factory::getApplication();
-$doc             = Factory::getDocument();
-$user            = Factory::getUser();
-$this->language  = $doc->language;
-$this->direction = $doc->direction;
+use \Joomla\CMS\Factory;
 
-// Output as HTML5
-$doc->setHtml5(true);
+$app  = Factory::getApplication();
+$user = Factory::getUser();
 
 // Getting params from template
 $params = $app->getTemplate(true)->params;
 
+<<<<<<< HEAD
 // Get the name of the template
 $templateName = $app->getTemplate();
 
 // Get the root of the domain name e.g. www.domainname.com and assign it to variable
 $JURI = Uri::root();
 
+=======
+>>>>>>> parent of 3628a6b (improved offline page, improved error page, added language string for offline page, added error.css)
 // Detecting Active Variables
 $option   = $app->input->getCmd('option', '');
 $view     = $app->input->getCmd('view', '');
@@ -40,15 +42,24 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $format   = $app->input->getCmd('format', 'html');
-$sitename = $app->get('sitename');
+$sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');
+
+if ($task === 'edit' || $layout === 'form')
+{
+    $fullWidth = 1;
+}
+else
+{
+    $fullWidth = 0;
+}
+
 
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css" rel="stylesheet" />
-    <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/error.css" rel="stylesheet" />
+    <jdoc:include type="head" />
 </head>
 <body
     <?php echo "class='" .
@@ -61,6 +72,7 @@ $sitename = $app->get('sitename');
         . ($this->direction === 'rtl' ? ' rtl' : '')
         . "'";
     ?>
+<<<<<<< HEAD
     <section id="logo">
         <div class="container">
             <div class="pure-g">
@@ -80,6 +92,18 @@ $sitename = $app->get('sitename');
 <!--            </div>-->
 <!--        </div>-->
 <!--    </section>-->
+=======
+>
+    <?php if ($navigation) : ?>
+        <section id="navigation">
+            <div class="container">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="navigation" style="pureCSS" />
+                </div>
+            </div>
+        </section>
+    <?php endif ?>
+>>>>>>> parent of 3628a6b (improved offline page, improved error page, added language string for offline page, added error.css)
     <section id="main" role="main">
         <div class="container">
             <div class="pure-g">
@@ -144,24 +168,27 @@ $sitename = $app->get('sitename');
             </div>
         </div>
     </section>
-    <section id="footer">
-        <div class="container">
-            <div class="pure-g">
-                <?php
-                    echo $this->loadRenderer('modules')->render('footer', array('style' => 'pureCSS'));
-                ?>
+    <?php if ($footer) : ?>
+        <section id="footer">
+            <div class="container">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="footer" style="pureCSS" />
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif ?>
 
-    <section id="belowFooter">
-        <div class="container">
-            <div class="pure-g">
-                <?php
-                    echo $this->loadRenderer('modules')->render('belowFooter', array('style' => 'pureCSS'));
-                ?>
+    <?php if ($belowFooter) : ?>
+        <section id="belowFooter">
+            <div class="container">
+                <div class="pure-g">
+                    <jdoc:include type="modules" name="belowFooter" style="pureCSS" />
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif ?>
+<?php if ($format === 'html') : ?>
+    <?php echo $this->loadRenderer('modules')->render('debug', array('style' => 'none')); ?>
+<?php endif; ?>
 </body>
 </html>

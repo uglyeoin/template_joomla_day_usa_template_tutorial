@@ -10,6 +10,7 @@
 defined('_JEXEC') or die;
 
 /** @var JDocumentHtml $this */
+<<<<<<< HEAD
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
@@ -23,10 +24,16 @@ $doc                = Factory::getDocument();
 $user               = Factory::getUser();
 $this->language     = $doc->language;
 $this->direction    = $doc->direction;
+=======
+
+$twofactormethods = JAuthenticationHelper::getTwoFactorMethods();
+$app              = JFactory::getApplication();
+>>>>>>> parent of 3628a6b (improved offline page, improved error page, added language string for offline page, added error.css)
 
 // Output as HTML5
 $this->setHtml5(true);
 
+<<<<<<< HEAD
 // Get the name of the template
 $templateName = $app->getTemplate();
 
@@ -40,6 +47,8 @@ HTMLHelper::_('stylesheet', 'https://unpkg.com/purecss@2.0.5/build/grids-respons
 /* Our custom CSS based on SCSS */
 HTMLHelper::_('stylesheet', $JURI . 'templates/' . $templateName . '/css/custom.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
 
+=======
+>>>>>>> parent of 3628a6b (improved offline page, improved error page, added language string for offline page, added error.css)
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
@@ -51,6 +60,7 @@ HTMLHelper::_('stylesheet', $JURI . 'templates/' . $templateName . '/css/custom.
 <div class="container">
     <div class="pure-g">
         <div class="pure-u-1">
+<<<<<<< HEAD
             <a class="dj-up_a active " href="/" aria-expanded="false"><span><img class="dj-icon pure-img padding" src="/images/brand-assets/GlowCare--logo--blue.svg" alt="Home" style="max-width: 400px;"></span></a>
         </div>
     </div>
@@ -63,6 +73,8 @@ HTMLHelper::_('stylesheet', $JURI . 'templates/' . $templateName . '/css/custom.
     </div>
     <div class="pure-g">
         <div class="pure-u-1">
+=======
+>>>>>>> parent of 3628a6b (improved offline page, improved error page, added language string for offline page, added error.css)
             <jdoc:include type="message" />
             <form action="<?php echo Route::_('index.php', true); ?>" method="post" id="form-login">
                 <fieldset>

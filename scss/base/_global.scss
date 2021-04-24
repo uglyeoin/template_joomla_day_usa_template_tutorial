@@ -223,3 +223,10 @@ html {
 .alert-message {
     letter-spacing: normal;
 }
+
+/* Fixing Joomla double class issue */
+.module-content {
+    > div {
+        width: 100%;
+    }
+}
