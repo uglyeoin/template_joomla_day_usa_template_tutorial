@@ -42,11 +42,9 @@ function modChrome_pureCSS($module, &$params, &$attribs)
 
         ?>
 
-        <div class="pure-g"><!-- the row -->
-            <div class="pure-u-<?php echo $moduleClass; ?>"><!-- the column -->
-                <?php echo $module->content; ?>
-            </div><!-- close the column -->
-        </div><!-- close the row -->
+        <div class="pure-u-<?php echo $moduleClass; ?>"><!-- the column -->
+            <?php echo $module->content; ?>
+        </div><!-- close the column -->
 
         <?php
     }

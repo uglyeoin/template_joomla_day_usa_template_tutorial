@@ -53,6 +53,9 @@ However, in some cases, you really don't want a component.  Say for example a pa
 2. Create a folder named HTML
 3. Create a file called modules.php
 
+
+
+
 #### We encourage Pull requests.  Please make this template better.
 
 ###### Thanks to [Elisa Foltyn](https://www.joomla.de/wissen/joomla-tipps-im-advent/470-tuerchen-nummer-10) who created an excellent tutorial on creating your own Joomla! template on joomla.de without which I would not have managed this.  
