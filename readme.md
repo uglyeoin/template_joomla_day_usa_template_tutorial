@@ -7,6 +7,18 @@
 4. Change the template_preview.png and template_thumnail.png files
 5. Ok now you're ready for Step 2
 
+## Step 2
+1. Add the component.
+
+In Joomla! the component displays a component which is decided by the menu item.  You may commonly use things like com_content to show article blogs.  Or perhaps a single article.  Or perhaps you have a forms extension.  Or a shop.  Whatever it is, if we don't load the component it won't be able to load.
+
+However, in some cases, you really don't want a component.  Say for example a page where you wanted only modules.  In those cases, simply omit the component.
+
+## Step 3
+1. Add some CSS.  In this case we've got for the very tiny (sub 5kb) [pure.css](https://purecss.io).  
+
+
+
 ## Step 2 - Add the component
 1. Add the component.
 
@@ -20,7 +32,11 @@ However, in some cases, you really don't want a component.  Say for example a pa
 
 ## Step 4 - Add Module Positions
 1. Ok that's all the CSS and JavaScript we'll add for now.  Let's add some module positions
-2. 
+2. I'll base the module positions on my design.  
+3. You'll see we used countModules.  This checks to see if any modules are assigned to that module position.  If there aren't, we don't need to load it.
+
+
+
 
 
 #### We encourage Pull requests.  Please make this template better.
