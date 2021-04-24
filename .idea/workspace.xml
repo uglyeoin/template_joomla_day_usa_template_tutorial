@@ -23,17 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a03c83b-db26-4efd-8f56-8e1804766be9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/error.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/language/en-GB/en-GB.tpl_joomla_london.ini" beforeDir="false" afterPath="$PROJECT_DIR$/language/en-GB/en-GB.tpl_joomla_london.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/en-GB/en-GB.tpl_joomla_london.ini" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en-GB/en-GB.tpl_joomladayusa.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language/en-GB/en-GB.tpl_joomla_london.sys.ini" beforeDir="false" afterPath="$PROJECT_DIR$/languages/en-GB/en-GB.tpl_joomladayusa.sys.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/offline.php" beforeDir="false" afterPath="$PROJECT_DIR$/offline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/_below_hero_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_below_hero_text.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/_footer-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_footer-menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/_image_and_text.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_image_and_text.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/global/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/global/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/global/_url.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templateDetails.xml" beforeDir="false" afterPath="$PROJECT_DIR$/templateDetails.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,7 @@
       <workItem from="1617634544335" duration="5728000" />
       <workItem from="1618332994446" duration="1514000" />
       <workItem from="1618840605475" duration="3793000" />
-      <workItem from="1619205580817" duration="13727000" />
+      <workItem from="1619205580817" duration="17096000" />
     </task>
     <servers />
   </component>

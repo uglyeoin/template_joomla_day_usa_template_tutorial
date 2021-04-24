@@ -1,0 +1,70 @@
+
+
+.itemid-653 #g-main{
+    background-color: transparent;
+    .g-grid:first-child{
+        display: none;
+        @media screen and ( min-width:1025px ){
+            width: 29%;
+            background-color: $color-secondary;
+            height: 650px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+        }
+    }
+    .g-grid:last-child{
+        width: 100%;
+        margin-top: initial;
+        @media screen and ( min-width:1025px ){
+            margin-top: 25px;
+            width:70% ;
+            display: inline-block;
+        }
+    }
+}
+
+// .sec-procurement-hero{
+//     background-color: $color-procurement;
+// }
+
+
+// .procurement-page{
+//     padding-bottom: 30px;
+//     background-color: $color-procurement;
+//     @media screen and ( min-width:1025px ){
+//         background-color:$root ;
+//         padding-bottom: 0px;
+//     }
+//     &__container{
+//        padding:8px 0px 17px;
+//         @media screen and ( min-width:1025px ){
+//         padding: 72px 10px;
+//         }
+//    }
+//    &__sidebar{
+//         background-color: $black;
+//         margin-right: initial;
+//         display: none;
+//         @media screen and ( min-width:1025px ){
+//         display: block;
+//         margin-right: 65px;
+//         }
+       
+//    }
+//    &__image{
+//     @include box-sizing-bb();
+//     padding: 63px 80px 42px 97px;
+//     img{
+//         @extend %image;
+//         vertical-align: baseline;
+//     }
+
+// }
+//    &__info{
+//         @include box-sizing-bb();
+//         padding: 10px 49px 40px 48px;
+   
+// }
+  
+// }

@@ -1,0 +1,122 @@
+#g-page-surround {
+    #g-trustpilot {
+        background-color: $black;
+        color: $white;
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: 500;
+        a {
+            color: $white;
+            border-bottom: 2px solid $white;
+            &:hover {
+                border-bottom: none;
+            }
+        }
+        //.g-container {
+        //    background-color: $black;
+        //}
+        .g-grid {
+            flex-grow: 1;
+        }
+        .g-block {
+            align-self: center;
+        }
+
+        .custom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: start;
+            align-items: center;
+
+            .trustpilot--logo {
+                width: 190px;
+                height: 47px;
+                margin-right: 60px;
+                overflow: hidden;
+
+                img {
+                    @extend %image;
+                }
+
+            }
+
+            .trustpilot--text h2 {
+                // margin: 0 0 0 10px;
+                margin: 0;
+                font-family: $font-primary;
+                font-size: 21px;
+                font-weight: $ultra-regular;
+                color: $white;
+            }
+        }
+    }
+
+    .g-block.size-18 {
+        flex-basis: 52%;
+    }
+    .g-block.size-22 {
+        flex-basis: 48%;
+    }
+    @include breakpoint(desktop) {
+        .g-block.size-18 {
+            flex-basis: 18%;
+        }
+        .g-block.size-22 {
+            flex-basis: 22%;
+        }
+    }
+}
+
+
+// .trustpilot{
+//     &__container{
+//         background-color:$black;
+//         padding: 15px 22px;
+//     }
+//    &__img{
+//         width: 190px;
+//         height: 47px;
+//         margin-right: 60px;
+//         background-color: transparent;
+//         background-image: url(#{$img-path}brandmark.svg);
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size:92% 100%;
+//         cursor: pointer;
+//     }
+//     &__rating{
+//         width: 190px;
+//         height: 47px;
+//         margin-right: 60px;
+//         background-color: transparent;
+//         background-image: url(#{$img-path}rating.svg);
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size:92% 100%;
+//         cursor: pointer;
+//     }
+//      &__text{
+//         margin: 0 0 0 10px;
+//         font-family: $font-primary;
+//         font-size: 21px;
+//         font-weight: $ultra-regular;
+//         color: $white;
+//     }
+//     &.home-trustpilot,
+//     &.procurement-trustpilot,
+//     &.business-trustpilot,
+//     &.security-trustpilot{
+//         display: none;
+//         @media screen and ( min-width:1025px ){    
+//             display: block;
+//         }
+//     }
+//     &.home-trustpilot{
+//         background-color:$black;
+//     }
+//     &.procurement-trustpilot,
+//     &.business-trustpilot,
+//     &.security-trustpilot{
+//         background-color:$root;
+//     }
+// }

@@ -1,0 +1,89 @@
+body {
+    background-color: $root;
+}
+
+#g-page-surround {
+    background: $white;
+}
+
+#g-container-main{
+    background-color:$white;
+}
+
+//Services
+.itemid-619 #g-container-main{
+    //background-color:$white;
+}
+//Relocation
+.itemid-620 {
+    #g-container-main {
+        //background-color:$white;
+        padding-bottom: 30px;
+        @include breakpoint(desktop) {
+            .g-container {
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
+
+//Training
+.itemid-622 #g-container-main{
+    //background-color:$white;
+}
+//Recycling
+.itemid-623 #g-container-main{
+    //background-color:lighten($color-tertiary, 0);
+    //@include breakpoint(desktop) {
+    //    .g-container {
+    //        background-color:lighten($color-tertiary, 22);
+    //    }
+    //}
+}
+//Security
+.itemid-625 #g-container-main {
+    //background-color:$orange;
+    //.item-page {
+    //    h2, p {
+    //        color: $white;
+    //    }
+    //}
+    @include breakpoint(desktop) {
+        //background-color:transparent;
+    }
+
+}
+// Procurement
+.itemid-653 #g-container-main{
+    background-color: $color-procurement;
+    @include breakpoint(desktop) {
+        background-color:$white;
+    }
+}
+
+.itemid-f #g-container-main,
+.itemid-620 #g-container-main,
+.itemid-621 #g-container-main,
+.itemid-622 #g-container-main,
+.itemid-623 #g-container-main,
+.itemid-624 #g-container-main,
+.itemid-625 #g-container-main,
+.itemid-653 #g-container-main{
+    padding-bottom: 30px;
+    padding-top: 1px;
+    @include breakpoint(desktop) {
+        padding-bottom: 0px;
+        padding-top: 1px;
+    }
+    #g-main{
+        padding-top: 1px;
+        padding-bottom: 1px;
+        .g-content{
+            @media (min-width:1px) and (max-width:1024px){
+                margin-top: 0px !important;
+                padding-top: 1px !important;
+            }
+        }
+
+    }
+}

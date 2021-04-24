@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600&display=swap");
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  @include breakpoint(desktop) {
+    text-align: left;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.pure-g * {
+  letter-spacing: normal;
+}
+
+p {
+  text-align: center;
+  @include breakpoint(desktop) {
+    text-align: left;
+  }
+}

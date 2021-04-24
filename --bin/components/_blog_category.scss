@@ -1,0 +1,78 @@
+#main {
+  padding: $padding * 4 $padding;
+  .page-header {
+    h1, h2 {
+      text-align: center;
+      font-size: 4.6875rem;
+      line-height: 75px;
+      color: $blue--medium;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+  }
+  .category-desc {
+    p {
+      text-align: center;
+      font-size: 1.875rem;
+      line-height: 45px;
+      color: $blue--medium;
+      font-weight: 500;
+      @include breakpoint(desktop) {
+        margin: 0 auto 20px;
+        max-width: 64%;
+      }
+    }
+  }
+  /* Intro Image */
+  .item-image {
+    border-radius: 100% 100% 100% 100%;
+    position: relative;
+    margin: 30px auto 24px;
+    max-width: 100%;
+    width: 330px;
+    height: 330px;
+    img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 100% 100% 100% 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .pure-u-md-8-24 {
+    .item-image {
+      width: 330px;
+      height: 330px;
+    }
+  }
+  .pure-u-md-6-24 {
+    .item-image {
+
+    }
+  }
+  .items-leading {
+    h2 {
+      font-size: 2.1875rem;
+      line-height: 38px;
+      text-align: center;
+      font-weight: 400;
+      a {
+        color: $blue--medium;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 28px;
+      font-weight: 500;
+      color: $blue--medium;
+      max-width: 100%;
+      margin: 0;
+      text-align: center;
+      &.readmore {
+        margin: 10px 0 30px 0;
+      }
+    }
+  }
+}

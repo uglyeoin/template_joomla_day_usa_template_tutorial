@@ -1,0 +1,106 @@
+.itemid-621 {
+  #g-main {
+    .pull-left.item-image {
+      width: 100%;
+      height: auto;
+      background: $black;
+      padding: 4rem;
+    }
+  }
+  #g-container-main,
+  #g-main{
+    background: $color-light;
+    .btn {
+      display: block;
+      padding: 10px 30px;
+      text-shadow: unset;
+      background-color: unset;
+      background-image: unset;
+      line-height: initial;
+      border: none;
+      -webkit-border-radius: 0px 0px 0px 0px;
+      -moz-border-radius: 0px 0px 0px 0px;
+      -ms-border-radius: 0px 0px 0px 0px;
+      -o-border-radius: 0px 0px 0px 0px;
+      border-radius: 0px 0px 0px 0px;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      background-image: -moz-linear-gradient(top, #fdc140, #fdc140);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fdc140), to(#fdc140));
+      background-image: -webkit-linear-gradient(top, #fdc140, #fdc140);
+      background-image: -o-linear-gradient(top, #fdc140, #fdc140);
+      background-image: linear-gradient(to bottom, #fdc140, #fdc140);
+      &:hover ,
+      &:focus {
+          -webkit-transition: all 0.2s ease-out;
+          -moz-transition: all 0.2s ease-out;
+          -ms-transition: all 0.2s ease-out;
+          -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+          background-position: center !important;
+      }
+    }
+  }
+  .item {
+    background: $white;
+    padding-bottom: 50px;
+    .item-content,
+    .page-header {
+      padding: 0 25px;
+    }
+  }
+  #g-hero {
+    .g-container {
+      overflow: hidden;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 0px;
+      background-image: url('../../../../../images/svgs/MAPTEC_outsource_2.svg');
+      background-repeat: no-repeat;
+      background-size: 92% auto;
+      background-position: right bottom;
+    }
+    p {
+      font-size: 21px;
+    }
+  }
+
+}
+
+
+// .package{
+//     padding: 30px 0;
+//     @media screen and ( min-width:1025px ){
+//         padding: 60px 0;
+//     }
+//     height: auto !important;
+//     &__title, &__subtitle{
+//         font-family: $font-primary;
+//         color: $black;
+//         line-height: 1.5;
+//         font-size: 24px;
+//         text-align: center;
+//         @media screen and ( min-width:321px ){
+//             font-size: 28px;
+//         }
+//         @media screen and ( min-width:769px ){
+//             font-size: 32px;
+//         }
+//         @media screen and ( min-width:1025px ){
+//             font-size: 36px;
+//         }
+//     }
+//     &__title{
+//         margin: 0;
+//         font-weight: $bold;
+//     }
+//     &__subtitle{
+//         margin: 0px 0px 30px 0px;
+//         font-weight: $regular;
+//     }
+// }

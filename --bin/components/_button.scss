@@ -1,0 +1,28 @@
+.btn {
+  font-size: 1.25rem;
+  line-height: 25px;
+  background-color: $blue--medium;
+  color: $white;
+  font-weight: 600;
+  padding: 8px 20px;
+  width: 170px;
+  outline: none;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  -webkit-transition: all 500ms ease-in-out 0s;
+  transition: all 500ms ease-in-out 0s;
+  text-decoration: none;
+  text-transform: uppercase;
+    a {
+      text-decoration: none;
+      border: none;
+    }
+  &.blue {
+    background-color: $blue--medium;
+    color: $white;
+  }
+  &.white {
+    background-color: $white;
+    color: $blue--medium;
+  }
+}

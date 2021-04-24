@@ -1,0 +1,157 @@
+#g-book-survey {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  .g-grid {
+    align-items: center;
+  }
+  .cta {
+    .g-grid {
+      color: $white;
+      background: $color-primary;
+      &:nth-of-type(2) {
+        background: $black;
+        a {
+          color: $white;
+          padding-bottom: 3px;
+          border-bottom: 2px solid $white;
+          &:hover {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .button__red {
+      max-width: 311px;
+    }
+    .g-block:nth-of-type(2) {
+      p {
+        text-align: right;
+      }
+    }
+    .book-survey--trustpilot {
+      background: $black;
+    }
+  }
+}
+
+.itemid-620 {
+  #g-book-survey {
+    .cta {
+      .g-grid {
+        background: $color-secondary;
+        &:nth-of-type(2) {
+          background: $black;
+        }
+      }
+    }
+  }
+}
+
+
+// .survey{
+//     margin: 0;
+//     padding:0;
+//     &.surver--extra{
+//         background-color:$color-extra;
+//         @media screen and ( min-width:1025px ){
+//             background-color:$color-light;
+//         }
+//         .survey__content{
+//             background-color:$color-extra;
+//             @media screen and ( min-width:1025px ){
+//                 background-color: $color-primary;
+//             }
+//         }
+//     }
+//     &.surver--primary{
+//         background-color:$orange;
+//         @media screen and ( min-width:1025px ){
+//             background-color:$root;
+//         }
+//         .survey__content{
+//             background-color:$orange;
+//             @media screen and ( min-width:1025px ){
+//                 background-color: $color-primary;
+//             }
+//         }
+//     }
+//     &.surver--secondary{
+//         background-color:$red;
+//         @media screen and ( min-width:1025px ){
+//             background-color:$root;
+//         }
+//         .survey__content{
+//             background-color:$red;
+//             @media screen and ( min-width:1025px ){
+//                 background-color: $color-secondary;
+//             }
+//         }
+//     }
+//     .survey__content{
+//         padding:0px;
+//         width: 100%;
+//         margin: 0;
+//         @include box-sizing-bb();
+//         @media screen and ( min-width:1025px ){
+//             padding: 30px 36px;
+//             width: 90%;
+//             max-width: 1280px;
+//             margin: 0 auto;
+            
+//         }
+//     }
+//     &__text{
+//         width: 100%;
+//         display: none;
+//         @media screen and ( min-width:1025px ){
+//             display: block;
+//             max-width: 583px;
+//         }
+//         > h3{
+//             margin: 0px;
+//             padding: 1px 0;
+//             color: $white;
+//             font-family: $font-primary;
+//             font-size: 16px;
+//             font-weight:$bold;
+//             line-height: 1.4;
+//             @media screen and ( min-width:321px ){
+//                 font-size: 18px;
+//             }
+//             @media screen and ( min-width:769px ){
+//                 font-size: 22px;
+//             }
+//             @media screen and ( min-width:1025px ){
+//                 font-size: 24px;
+//             }
+//         }
+//     }
+//     &__button{
+//         width: 100%;
+//         @media screen and ( min-width:1025px ){
+//             width: initial;
+//         }
+//         >ul{
+//             >li{ display: block;
+//                 width: 100%;
+//                 @media screen and ( min-width:1025px ){
+//                     display: inline-block;
+//                     width: initial;
+//                 }
+//                 >a, >button{
+//                     padding: 20px 0px;
+//                     display: block;
+//                     width: 100%;
+//                     text-align: center;
+//                     @media screen and ( min-width:1025px ){
+//                         display: inline-block;
+//                         width: initial;
+//                         padding: 20px 55px !important;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+// }

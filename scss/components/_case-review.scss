@@ -1,0 +1,35 @@
+// .case-review{
+//     background-color:$color-primary;
+//     &__content{
+//        padding: 0px 0px 21px 0px;
+//     }
+//     &__title{
+//        margin: 0;
+//        padding-top: 47px;
+//        color:$red;
+//        font-family: $font-primary;
+//        font-size: 36px;
+//     }
+//     &__image{
+//            img.max{
+//                display: none;
+//                @media screen and ( min-width:1025px ){   
+//                    display: block; 
+//                }
+//            }
+//            img.min{
+//                display: block;
+//                @media screen and ( min-width:1025px ){    
+//                    display: none;
+//                }
+//            }
+//         img{
+//            width: 100%;
+//            margin: 0;
+//            padding: 0;
+//            border: none;
+//            outline: none;
+//            vertical-align: baseline;
+//         }
+//     }
+// }

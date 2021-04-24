@@ -1,0 +1,29 @@
+/* Brand Colours */
+$blue--medium:        #025373;
+$blue--mint:          #9EDCE2;
+$blue--dark:          #002633;
+
+$blue--glowcare:      #053949;
+
+/* Generic Colours */
+$white:               #fff;
+$grey--light:         #e6e6e6;
+$grey--blue:          #E5E5F0;
+$grey--medium-light:  #DCDCE8;
+
+/* Backgrounds */
+#belowHero {
+  background: $blue--medium;
+  color: $white;
+}
+
+#feature {
+  background: $blue--mint;
+  color: $blue--medium;
+}
+
+#callToAction {
+  background: $blue--dark;
+  color: $white;
+}
+

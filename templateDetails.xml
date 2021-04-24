@@ -36,6 +36,11 @@
         <position>debug</position>
     </positions>
 
+    <languages folder="languages/en-GB">
+        <language tag="en-GB">en-GB.tpl_joomladayusa.ini</language>
+        <language tag="en-GB">en-GB.tpl_joomladayusa.sys.ini</language>
+    </languages>
+
     <config>
         <fields name="params">
             <fieldset name="advanced">

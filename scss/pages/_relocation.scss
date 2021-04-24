@@ -1,0 +1,90 @@
+
+ .itemid-620 #g-main{
+    background-color: transparent;
+    position: relative;
+   .item-page {
+     p {
+       color: $color-extra;
+     }
+   }
+    // .g-content{
+    //     @media (min-width:1px) and (max-width:1024px){
+    //         margin-top: 0px !important;
+    //         padding-top: 1px !important;
+    //     }
+    // }
+    //.g-grid:first-child{
+    //    display: none;
+    //    @media screen and ( min-width:1025px ){
+    //        width: 29%;
+    //        background-color: $black;
+    //        height: 115%;
+    //        display: inline-block;
+    //        vertical-align: top;
+    //        position: absolute;
+    //        top: -35%;
+    //        // margin-top: 40px;
+    //    }
+    //}
+    //.g-grid:last-child{
+    //    width: 100%;
+    //    margin-left: auto;
+    //    margin-top: initial;
+    //    @media screen and ( min-width:1025px ){
+    //        margin-top: 25px;
+    //        margin-left: 30%;
+    //        width:70% ;
+    //        display: inline-block;
+    //    }
+    //
+    //
+    //}
+}
+
+
+
+
+// .relocation-page{
+//     background-color:$red;
+//     padding-bottom: 30px;
+//     @media screen and ( min-width:1025px ){
+//         background-color:$root;
+//         padding-bottom: 0px;
+//     }
+//     &__container{
+//        padding:10px;
+//        position: relative;
+//         @media screen and ( min-width:1025px ){
+//         padding: 72px 10px;
+//         }
+//    }
+//    &__sidebar{
+//        margin-right: initial;
+//         display: none;
+//         position: relative;
+//         @media screen and ( min-width:769px ){
+//             display: initial;
+//             margin-right: 78px;
+//         }
+       
+//    }
+//     &__info{
+//         @include box-sizing-bb();
+//         padding:10px;
+//         background-color: $black;
+//         display: none;
+//         @media screen and ( min-width:1025px ){
+//             position: absolute;
+//             left:0;
+//             top:-400px;
+//             padding: 32px 24px 20px 24px;
+//             font-size: 26px;
+//             display: block;
+//         }
+//         @media screen and ( min-width:1281px ){
+//             padding: 65px 48px 40px 48px;
+//             font-size: 36px;
+//             display: block;
+//         }
+//     }
+// }

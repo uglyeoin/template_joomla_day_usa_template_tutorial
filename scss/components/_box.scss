@@ -1,0 +1,249 @@
+#g-services{
+    background-color: $color-light;
+    .page-header{
+        h1{
+            margin: 0;
+            padding: 15px 0 20px;
+            font-size: 32px;
+            color: $font-black;
+            text-align: center;
+            font-weight: $ultra-regular
+        }
+
+    }
+    .items-leading{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        .leading-0,
+        .leading-1,
+        .leading-2,
+        .leading-3,
+        .leading-4{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $black;
+            margin: 10px 5px 10px 5px;
+            width: calc(50% - 10px);
+            @media screen and ( min-width:1025px ){
+            margin: 10px 15px 10px 15px;
+            width: calc(33% - 30px);
+            background-color: $white;
+            }
+            p:last-child{
+                padding-bottom: 25px;
+            }
+            .pull-left.item-image{
+            float: none !important;
+            }
+            .item-image{
+                // width:104px;
+                // height:86px;
+                width: 100%;
+                margin: 0;
+                // margin: 16px auto 0;
+                background-color: $black;
+                @media screen and ( min-width:1025px ){
+                // width:164px;
+                // height:146px;
+                // margin: 62px auto;
+                }
+                img{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                border: none;
+                outline: none;
+                vertical-align: baseline;
+                }
+            }
+          h2,  p{
+            font-family: $font-primary;
+         }
+  
+         h2{ 
+            margin: 0;
+            padding: 5px 10px 25px;
+            font-size: 15px;
+            color: $white;
+            text-align: center;
+            font-weight: $bold;
+            @media screen and ( min-width:1025px ){
+                padding: 30px 25px 0px;
+                // margin: 15px 0;
+                font-size: 24px;
+                color: $font-black;
+                text-align: left;
+            }
+        }
+         p{
+            display: none;
+            color: $font-black;
+            font-size: 16px;
+            font-weight: $regular;
+            line-height: 1.5;
+            margin: 0;
+            padding: 5px 10px 25px;
+            @media screen and ( min-width:1025px ){
+                display: block;
+                padding: 20px 25px 0px;
+
+               
+            }
+        }
+        p.readmore{
+            display: none;
+            @media screen and ( min-width:1025px ){
+                display: inline-block !important;
+
+            }
+        }
+        }
+        .leading-4{
+            display: none;
+            @media screen and ( min-width:1025px ){
+                display: initial;
+            }
+        }
+    }
+
+    .btn{
+        display: block;
+        padding: 10px 30px;
+        text-shadow: unset;
+        background-color: unset;
+        background-image: unset;
+        line-height: initial;
+        border:none;
+        @include b-radius(0px);
+        @include transition();
+        background-image: -moz-linear-gradient(top, #FDC140, #FDC140);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FDC140), to(#FDC140)); 
+        background-image: -webkit-linear-gradient(top, #FDC140, #FDC140); 
+        background-image: -o-linear-gradient(top, #FDC140, #FDC140);
+        background-image: linear-gradient(to bottom, #FDC140, #FDC140); 
+        &:hover, &:focus {
+            @include transition();
+            background-position: center !important;
+    }
+}
+}
+
+// .small, 
+// .growing, 
+// .vip,
+// .help, 
+// .infrastructure, 
+// .installations, 
+// .procurement,
+// .security{
+//     &__header{
+//         background-color: $black;
+//         padding: 10px 10px 5px;
+//         @media screen and ( min-width:1025px ){
+//             padding: 20px 25px;
+//         }
+//     }
+//     &__body{
+//         background-color: $black;
+//         padding: 5px 10px 25px;
+//         @media screen and ( min-width:1025px ){
+//             background-color: $white;
+//             padding: 20px 25px;
+//         }
+//         > h1, > p{
+//             font-family: $font-primary;
+//         }
+//         > h1{ 
+//             margin: 0;
+//             font-size: 15px;
+//             color: $white;
+//             text-align: center;
+//             @media screen and ( min-width:1025px ){
+//                 margin: 15px 0;
+//                 font-size: 24px;
+//                 color: $font-black;
+//                 text-align: left;
+//             }
+//         }
+//         > p{
+//             display: none;
+//             color: $font-black;
+//             font-size: 16px;
+//             line-height: 1.5;
+//             @media screen and ( min-width:1025px ){
+//                 display: block;
+               
+//             }
+//         }
+//     }
+//     &__footer{
+//         background-color: $white;
+//         display: none;
+//         padding: 20px 25px;
+//         @include box-sizing-bb();
+//         @media screen and ( min-width:1025px ){
+//             display: block;
+//         }
+//     }
+//     &__image{
+//         width:104px;
+//         height:86px;
+//         margin: 16px auto 0;
+//         @media screen and ( min-width:1025px ){
+//             width:164px;
+//             height:146px;
+//             margin: 62px auto;
+//         }
+//         img{
+//             width: 100%;
+//             height: 100%;
+//             margin: 0;
+//             padding: 0;
+//             border: none;
+//             outline: none;
+//             vertical-align: baseline;
+//         }
+//     }
+// }
+// .procurement, .security{
+//     margin-top: 10px;
+//     @media screen and ( min-width:1025px ){    
+//         margin-top: initial;
+//         margin-top: 78px;
+//     }
+// }
+//  .help, 
+//  .infrastructure, 
+//  .installations, 
+//  .procurement,
+//  .security{
+//         margin: 10px 5px 10px 5px;
+//         width: calc(50% - 10px);
+//      @media screen and ( min-width:1025px ){
+//         margin: 10px 15px 10px 15px;
+//         width: calc(33% - 30px);
+//      }
+//     }
+// .security{
+//     display: none;
+//     @media screen and ( min-width:1025px ){    
+//         display: initial;
+//     }
+// }
+// .small, 
+// .growing, 
+// .vip{
+//     margin: 10px 5px 10px 5px;
+//     width: calc(100% - 10px);
+//     @media screen and ( min-width:1025px ){
+//         margin: 10px 15px 10px 15px;
+//         width: calc(33% - 30px);
+//     }
+//     &__footer{
+//         padding: 10px 0px 0px;
+//     }
+// }

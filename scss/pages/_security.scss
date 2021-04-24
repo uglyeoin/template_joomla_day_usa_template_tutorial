@@ -1,0 +1,129 @@
+//.itemid-625 #g-main{
+    //background-color: transparent;
+    //.g-grid:first-child{
+    //    display: none;
+    //    @media screen and ( min-width:1025px ){
+    //        width: 29%;
+    //        background-color: $color-secondary;
+    //        height: 500px;
+    //        display: inline-block;
+    //        vertical-align: top;
+    //        margin-top: 40px;
+    //    }
+    //
+    //}
+    //.g-grid:last-child{
+    //    width: 100%;
+    //    @media screen and ( min-width:1025px ){
+    //        width:70% ;
+    //        display: inline-block;
+    //    }
+    //}
+//}
+
+// .sec-security-hero{
+// background-color: $orange;
+// }
+
+// .security-page{
+//     background-color:$orange ;
+//     @media screen and ( min-width:321px ){
+//     }
+//     @media screen and ( min-width:769px ){
+
+//     }
+//     @media screen and ( min-width:1025px ){
+//         background-color: transparent;
+//     }
+//     &__container{
+//        padding:10px;
+//         @media screen and ( min-width:321px ){
+//         }
+//         @media screen and ( min-width:769px ){
+//         }
+//         @media screen and ( min-width:1025px ){
+//         padding: 72px 10px;
+//         }
+//    }
+//    &__sidebar{
+//        background-color: $black;
+//        margin-right: initial;
+//         display: none;
+//         @media screen and ( min-width:321px ){
+//         }
+//         @media screen and ( min-width:769px ){
+
+//         }
+//         @media screen and ( min-width:1025px ){
+//             display: block;
+//             margin-right: 65px;
+//         }
+
+//    }
+//    &__image{
+//     @include box-sizing-bb();
+//     padding: 38px 83px 52px 93px;
+//     img{
+//         width: 100%;
+//         border: none;
+//         outline: none;
+//         vertical-align: baseline;
+//     }
+
+// }
+//    &__info{
+//         @include box-sizing-bb();
+//         padding: 10px 49px 40px 48px;
+//     }
+
+// }
+
+
+// .security-block{
+//     background-color:$orange ;
+//     @media screen and ( min-width:321px ){
+//     }
+//     @media screen and ( min-width:769px ){
+//     }
+//     @media screen and ( min-width:1025px ){
+//         background-color: transparent;
+//     }
+//     &__container{
+//        padding:10px;
+//         @media screen and ( min-width:1025px ){
+//         padding: 57px 10px 0px 10px;
+//         }
+//    }
+//    &__sidebar{
+//         display: none;
+//         @media screen and ( min-width:1025px ){
+//             display: block;
+//         }
+
+//    }
+//    &__image{
+//         @include box-sizing-bb();
+//         img{
+//             @extend %image;
+//             vertical-align: baseline;
+//         }
+//     }
+
+// }
+
+// .security-bottom{
+//     background-color: $orange;
+//     display: block;
+//     @media screen and ( min-width:1025px ){
+//         display: none;
+//     }
+//     &__content{
+//         margin: 0;
+//         padding: 0;
+//         img{ @extend %image;
+//             vertical-align: bottom;
+
+//         }
+
+//     }
+// }

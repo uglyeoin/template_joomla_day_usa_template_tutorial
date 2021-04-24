@@ -1,0 +1,28 @@
+$padding: 0.638rem;
+
+//.pure-g [class*="pure-u"] {
+//  &.padding {
+//    padding: $padding;
+//  }
+//}
+
+.padding {
+  padding: $padding;
+}
+
+@include breakpoint(desktop) {
+  .padding--width--double {
+    padding: $padding * 2;
+  }
+}
+
+section {
+  padding: $padding;
+  @include breakpoint(desktop) {
+    padding: 0;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}

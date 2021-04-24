@@ -12,6 +12,8 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
+use Joomla\CMS\Language\Text;
+use Joomla\CMS\Uri\Uri;
 
 $app             = Factory::getApplication();
 $doc             = Factory::getDocument();
@@ -29,7 +31,7 @@ $params = $app->getTemplate(true)->params;
 $templateName = $app->getTemplate();
 
 // Get the root of the domain name e.g. www.domainname.com and assign it to variable
-$JURI = JURI::root();
+$JURI = Uri::root();
 
 // Detecting Active Variables
 $option   = $app->input->getCmd('option', '');
