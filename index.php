@@ -32,7 +32,7 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
-$year     = JFactory::getDate()->format('Y');
+$year     = Factory::getDate()->format('Y');
 
 /* Component? */
 $component = ($this->params->get('mainoutput'));
