@@ -57,8 +57,6 @@ nothing if $returnPath is false, null, path or array of path if specific CSS bro
 /* Pure CSS Grids */
 HTMLHelper::_('stylesheet', 'https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
 
-/* Our custom CSS based on SCSS */
-HTMLHelper::_('stylesheet', $JURI . 'templates/' . $templateName . '/css/custom.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
 
 /* How to add JavaScript */
 /* HTMLHelper::_('script', $file,$options, $attributes); */
