@@ -11,7 +11,7 @@
 defined('_JEXEC') or die;
 
 use \Joomla\CMS\Factory;
-
+use Joomla\CMS\HTML\HTMLHelpe;
 $app             = Factory::getApplication();
 $doc             = Factory::getDocument();
 $user            = Factory::getUser();
@@ -31,7 +31,7 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
-$year     = JFactory::getDate()->format('Y');
+$year     = Factory::getDate()->format('Y');
 
 /* Component? */
 $component = ($this->params->get('mainoutput'));
@@ -39,16 +39,16 @@ $component = ($this->params->get('mainoutput'));
 $doc->addScript('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('integrity' => 'sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd', 'crossorigin' => 'anonymous'));
 
 
-$debug           = ($this->countModules('debug'));
-$navigation      = ($this->countModules('navigation'));
-$hero            = ($this->countModules('hero'));
-$belowHero       = ($this->countModules('belowHero'));
-$feature         = ($this->countModules('feature'));
-$services        = ($this->countModules('services'));
-$reviews         = ($this->countModules('reviews'));
-$callToAction    = ($this->countModules('callToAction'));
-$belowFooter     = ($this->countModules('footer'));
-$belowFooter     = ($this->countModules('belowFooter'));
+$debug           = $this->countModules('debug');
+$navigation      = $this->countModules('navigation');
+$hero            = $this->countModules('hero');
+$belowHero       = $this->countModules('belowHero');
+$feature         = $this->countModules('feature');
+$services        = $this->countModules('services');
+$reviews         = $this->countModules('reviews');
+$callToAction    = $this->countModules('callToAction');
+$belowFooter     = $this->countModules('footer');
+$belowFooter     = $this->countModules('belowFooter');
 
 ?>
 
