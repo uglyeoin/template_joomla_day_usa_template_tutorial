@@ -11,6 +11,7 @@
 defined('_JEXEC') or die;
 
 use \Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
 
 $app             = Factory::getApplication();
 $doc             = Factory::getDocument();
@@ -31,13 +32,13 @@ $layout   = $app->input->getCmd('layout', '');
 $task     = $app->input->getCmd('task', '');
 $itemid   = $app->input->getCmd('Itemid', '');
 $sitename = $app->get('sitename');
-$year     = JFactory::getDate()->format('Y');
+$year     = Factory::getDate()->format('Y');
 
 /* Component? */
 $component = ($this->params->get('mainoutput'));
 
-$doc->addScript('https://unpkg.com/purecss@2.0.5/build/pure-min.css',array('integrity' => 'sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd', 'crossorigin' => 'anonymous'));
-
+/* Pure CSS Grids */
+HTMLHelper::_('stylesheet', 'https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css', ['version' => 'auto', 'relative' => true, 'crossorigin' => 'anonymous']);
 
 $debug           = $this->countModules('debug');
 $navigation      = $this->countModules('navigation');
